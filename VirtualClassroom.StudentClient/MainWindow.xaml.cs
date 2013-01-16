@@ -21,7 +21,26 @@ namespace VirtualClassroom.StudentClient
     {
         public MainWindow()
         {
+            LoginWindow loginWindow = new LoginWindow();
+            if(loginWindow.ShowDialog() == true)
+            {
+                MessageBox.Show("Login successfull. Welcome!");
+                StudentId = loginWindow.Student.Id;
+            }
+
             InitializeComponent();
+        }
+
+        public static int StudentId { get; private set; }
+
+        private void btnViewLessons_Click(object sender, RoutedEventArgs e)
+        {
+            this.frameMainContent.Source = new Uri("ViewLessonsPage.xaml", UriKind.Relative);
+        }
+
+        private void btnViewMarks_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

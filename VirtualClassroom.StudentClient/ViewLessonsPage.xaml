@@ -1,0 +1,26 @@
+﻿<Page x:Class="VirtualClassroom.StudentClient.ViewLessonsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+	Title="ViewLessonsPage">
+
+    <Grid>
+        <WrapPanel>
+            <DataGrid x:Name="dataGridLessons" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
+                    <DataGridTextColumn Header="Subject" Binding="{Binding Path=Subject}" />
+                    <DataGridTextColumn Header="Date" Binding="{Binding Path=Date}" />
+                    <DataGridTextColumn Header="Homework Deadline" Binding="{Binding Path=HomeworkDeadline}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel>
+                <Button x:Name="btnDownloadContent" Click="btnDownloadContent_Click">Download Content</Button>
+                <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Download Homework</Button>
+                <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Add Homework</Button>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>
