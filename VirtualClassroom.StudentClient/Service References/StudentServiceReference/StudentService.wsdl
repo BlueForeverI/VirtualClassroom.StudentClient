@@ -19,6 +19,24 @@
   <wsdl:message name="IStudentService_GetLessonsByStudent_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetLessonsByStudentResponse" />
   </wsdl:message>
+  <wsdl:message name="IStudentService_GetSubjectsByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectsByStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetSubjectsByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectsByStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonContent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonHomework_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonHomework" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonHomework_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonHomeworkResponse" />
+  </wsdl:message>
   <wsdl:portType name="IStudentService">
     <wsdl:operation name="LoginStudent">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/LoginStudent" message="tns:IStudentService_LoginStudent_InputMessage" />
@@ -27,6 +45,18 @@
     <wsdl:operation name="GetLessonsByStudent">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetLessonsByStudent" message="tns:IStudentService_GetLessonsByStudent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetLessonsByStudentResponse" message="tns:IStudentService_GetLessonsByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectsByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetSubjectsByStudent" message="tns:IStudentService_GetSubjectsByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetSubjectsByStudentResponse" message="tns:IStudentService_GetSubjectsByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadLessonContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonContent" message="tns:IStudentService_DownloadLessonContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonContentResponse" message="tns:IStudentService_DownloadLessonContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadLessonHomework">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonHomework" message="tns:IStudentService_DownloadLessonHomework_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonHomeworkResponse" message="tns:IStudentService_DownloadLessonHomework_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStudentService" type="tns:IStudentService">
@@ -42,6 +72,33 @@
     </wsdl:operation>
     <wsdl:operation name="GetLessonsByStudent">
       <soap:operation soapAction="http://tempuri.org/IStudentService/GetLessonsByStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectsByStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudentService/GetSubjectsByStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadLessonContent">
+      <soap:operation soapAction="http://tempuri.org/IStudentService/DownloadLessonContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadLessonHomework">
+      <soap:operation soapAction="http://tempuri.org/IStudentService/DownloadLessonHomework" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

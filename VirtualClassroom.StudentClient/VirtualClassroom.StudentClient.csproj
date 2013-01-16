@@ -124,10 +124,16 @@
     <None Include="Service References\StudentServiceReference\StudentService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.File.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Lesson.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Student.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Subject.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>

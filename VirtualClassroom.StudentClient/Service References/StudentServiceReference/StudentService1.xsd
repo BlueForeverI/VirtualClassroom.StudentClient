@@ -30,4 +30,46 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetSubjectsByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectsByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" minOccurs="0" name="GetSubjectsByStudentResult" nillable="true" type="q3:ArrayOfSubject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" minOccurs="0" name="DownloadLessonContentResult" nillable="true" type="q4:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonHomework">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonHomeworkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" minOccurs="0" name="DownloadLessonHomeworkResult" nillable="true" type="q5:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

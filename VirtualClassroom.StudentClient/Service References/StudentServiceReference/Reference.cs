@@ -500,6 +500,285 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Subject", Namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services")]
+    [System.SerializableAttribute()]
+    public partial class Subject : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private VirtualClassroom.StudentClient.StudentServiceReference.Class[] ClassesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private VirtualClassroom.StudentClient.StudentServiceReference.Lesson[] LessonsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TeacherIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public VirtualClassroom.StudentClient.StudentServiceReference.Class[] Classes {
+            get {
+                return this.ClassesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClassesField, value) != true)) {
+                    this.ClassesField = value;
+                    this.RaisePropertyChanged("Classes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public VirtualClassroom.StudentClient.StudentServiceReference.Lesson[] Lessons {
+            get {
+                return this.LessonsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LessonsField, value) != true)) {
+                    this.LessonsField = value;
+                    this.RaisePropertyChanged("Lessons");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TeacherId {
+            get {
+                return this.TeacherIdField;
+            }
+            set {
+                if ((this.TeacherIdField.Equals(value) != true)) {
+                    this.TeacherIdField = value;
+                    this.RaisePropertyChanged("TeacherId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Class", Namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services")]
+    [System.SerializableAttribute()]
+    public partial class Class : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LetterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int NumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private VirtualClassroom.StudentClient.StudentServiceReference.Student[] StudentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private VirtualClassroom.StudentClient.StudentServiceReference.Subject[] SubjectsField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Letter {
+            get {
+                return this.LetterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LetterField, value) != true)) {
+                    this.LetterField = value;
+                    this.RaisePropertyChanged("Letter");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Number {
+            get {
+                return this.NumberField;
+            }
+            set {
+                if ((this.NumberField.Equals(value) != true)) {
+                    this.NumberField = value;
+                    this.RaisePropertyChanged("Number");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public VirtualClassroom.StudentClient.StudentServiceReference.Student[] Students {
+            get {
+                return this.StudentsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StudentsField, value) != true)) {
+                    this.StudentsField = value;
+                    this.RaisePropertyChanged("Students");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public VirtualClassroom.StudentClient.StudentServiceReference.Subject[] Subjects {
+            get {
+                return this.SubjectsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SubjectsField, value) != true)) {
+                    this.SubjectsField = value;
+                    this.RaisePropertyChanged("Subjects");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="File", Namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services")]
+    [System.SerializableAttribute()]
+    public partial class File : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] ContentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FilenameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Content {
+            get {
+                return this.ContentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContentField, value) != true)) {
+                    this.ContentField = value;
+                    this.RaisePropertyChanged("Content");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Filename {
+            get {
+                return this.FilenameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FilenameField, value) != true)) {
+                    this.FilenameField = value;
+                    this.RaisePropertyChanged("Filename");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="StudentServiceReference.IStudentService")]
     public interface IStudentService {
@@ -509,6 +788,15 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/GetLessonsByStudent", ReplyAction="http://tempuri.org/IStudentService/GetLessonsByStudentResponse")]
         VirtualClassroom.StudentClient.StudentServiceReference.Lesson[] GetLessonsByStudent(int studentId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/GetSubjectsByStudent", ReplyAction="http://tempuri.org/IStudentService/GetSubjectsByStudentResponse")]
+        VirtualClassroom.StudentClient.StudentServiceReference.Subject[] GetSubjectsByStudent(int studentId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/DownloadLessonContent", ReplyAction="http://tempuri.org/IStudentService/DownloadLessonContentResponse")]
+        VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonContent(int lessonId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/DownloadLessonHomework", ReplyAction="http://tempuri.org/IStudentService/DownloadLessonHomeworkResponse")]
+        VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonHomework(int lessonId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -544,6 +832,18 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         
         public VirtualClassroom.StudentClient.StudentServiceReference.Lesson[] GetLessonsByStudent(int studentId) {
             return base.Channel.GetLessonsByStudent(studentId);
+        }
+        
+        public VirtualClassroom.StudentClient.StudentServiceReference.Subject[] GetSubjectsByStudent(int studentId) {
+            return base.Channel.GetSubjectsByStudent(studentId);
+        }
+        
+        public VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonContent(int lessonId) {
+            return base.Channel.DownloadLessonContent(lessonId);
+        }
+        
+        public VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonHomework(int lessonId) {
+            return base.Channel.DownloadLessonHomework(lessonId);
         }
     }
 }
