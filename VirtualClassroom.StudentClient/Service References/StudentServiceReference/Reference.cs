@@ -202,6 +202,9 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         private System.DateTime DateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FilenameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -245,6 +248,19 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
                 if ((this.DateField.Equals(value) != true)) {
                     this.DateField = value;
                     this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Filename {
+            get {
+                return this.FilenameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FilenameField, value) != true)) {
+                    this.FilenameField = value;
+                    this.RaisePropertyChanged("Filename");
                 }
             }
         }
@@ -797,6 +813,12 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/DownloadLessonHomework", ReplyAction="http://tempuri.org/IStudentService/DownloadLessonHomeworkResponse")]
         VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonHomework(int lessonId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/AddHomework", ReplyAction="http://tempuri.org/IStudentService/AddHomeworkResponse")]
+        void AddHomework(VirtualClassroom.StudentClient.StudentServiceReference.Homework homework);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/GetHomeworksByStudent", ReplyAction="http://tempuri.org/IStudentService/GetHomeworksByStudentResponse")]
+        VirtualClassroom.StudentClient.StudentServiceReference.Homework[] GetHomeworksByStudent(int studentId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -844,6 +866,14 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         
         public VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonHomework(int lessonId) {
             return base.Channel.DownloadLessonHomework(lessonId);
+        }
+        
+        public void AddHomework(VirtualClassroom.StudentClient.StudentServiceReference.Homework homework) {
+            base.Channel.AddHomework(homework);
+        }
+        
+        public VirtualClassroom.StudentClient.StudentServiceReference.Homework[] GetHomeworksByStudent(int studentId) {
+            return base.Channel.GetHomeworksByStudent(studentId);
         }
     }
 }

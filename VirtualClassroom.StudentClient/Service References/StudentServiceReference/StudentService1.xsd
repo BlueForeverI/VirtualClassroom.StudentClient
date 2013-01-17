@@ -72,4 +72,30 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="AddHomework">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" minOccurs="0" name="homework" nillable="true" type="q6:Homework" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddHomeworkResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHomeworksByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHomeworksByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" minOccurs="0" name="GetHomeworksByStudentResult" nillable="true" type="q7:ArrayOfHomework" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

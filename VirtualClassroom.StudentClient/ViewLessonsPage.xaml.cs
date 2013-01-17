@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using Microsoft.Win32;
 using VirtualClassroom.StudentClient.StudentServiceReference;
 using System.IO;
+using File = System.IO.File;
 
 namespace VirtualClassroom.StudentClient
 {
@@ -74,7 +75,17 @@ namespace VirtualClassroom.StudentClient
 
         private void btnAddHomework_Click(object sender, RoutedEventArgs e)
         {
-
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if(openFileDialog.ShowDialog() == true)
+            {
+                Homework homework = new Homework();
+                homework.Filename = new FileInfo(openFileDialog.FileName).Name;
+                homework.Content = File.ReadAllBytes(openFileDialog.FileName);
+                homework.StudentId = MainWindow.StudentId;
+                homework.LessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
+                client.AddHomework(homework);
+                MessageBox.Show("Homework added successfully!");
+            }
         }
     }
 }

@@ -40,7 +40,7 @@ namespace VirtualClassroom.StudentClient
 
         private void btnViewMarks_Click(object sender, RoutedEventArgs e)
         {
-
+            this.frameMainContent.Source = new Uri("ViewMarksPage.xaml", UriKind.Relative);
         }
     }
 }

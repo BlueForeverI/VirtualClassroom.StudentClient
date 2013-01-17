@@ -7,20 +7,22 @@
 	Title="ViewLessonsPage">
 
     <Grid>
-        <WrapPanel>
-            <DataGrid x:Name="dataGridLessons" AutoGenerateColumns="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
-                    <DataGridTextColumn Header="Subject" Binding="{Binding Path=Subject}" />
-                    <DataGridTextColumn Header="Date" Binding="{Binding Path=Date}" />
-                    <DataGridTextColumn Header="Homework Deadline" Binding="{Binding Path=HomeworkDeadline}" />
-                </DataGrid.Columns>
-            </DataGrid>
-            <StackPanel>
-                <Button x:Name="btnDownloadContent" Click="btnDownloadContent_Click">Download Content</Button>
-                <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Download Homework</Button>
-                <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Add Homework</Button>
-            </StackPanel>
-        </WrapPanel>
+        <GroupBox Header="Lessons">
+            <WrapPanel>
+                <DataGrid x:Name="dataGridLessons" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
+                        <DataGridTextColumn Header="Subject" Binding="{Binding Path=Subject}" />
+                        <DataGridTextColumn Header="Date" Binding="{Binding Path=Date}" />
+                        <DataGridTextColumn Header="Homework Deadline" Binding="{Binding Path=HomeworkDeadline}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel>
+                    <Button x:Name="btnDownloadContent" Click="btnDownloadContent_Click">Download Content</Button>
+                    <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Download Homework</Button>
+                    <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Add Homework</Button>
+                </StackPanel>
+            </WrapPanel>
+        </GroupBox>
     </Grid>
 </Page>
