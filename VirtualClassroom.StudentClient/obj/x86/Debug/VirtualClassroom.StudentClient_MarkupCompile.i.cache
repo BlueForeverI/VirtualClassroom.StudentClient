@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\dev\projects\virtualclassroom\VirtualClassroom.StudentClient\VirtualClassroom.StudentClient\obj\x86\Debug\
+E:\dev\projects\VirtualClassroom.StudentClient\VirtualClassroom.StudentClient\obj\x86\Debug\
 VirtualClassroom.StudentClient
 none
 false
 DEBUG;TRACE
-E:\dev\projects\virtualclassroom\VirtualClassroom.StudentClient\VirtualClassroom.StudentClient\App.xaml
+E:\dev\projects\VirtualClassroom.StudentClient\VirtualClassroom.StudentClient\App.xaml
 41095322169
 
 11-629570210
-141997438473
+14637617180
 LoginWindow.xaml;MainWindow.xaml;ViewLessonsPage.xaml;ViewMarksPage.xaml;
 
 False

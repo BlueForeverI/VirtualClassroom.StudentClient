@@ -49,6 +49,12 @@
   <wsdl:message name="IStudentService_GetHomeworksByStudent_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetHomeworksByStudentResponse" />
   </wsdl:message>
+  <wsdl:message name="IStudentService_GetMarksByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarksByStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetMarksByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarksByStudentResponse" />
+  </wsdl:message>
   <wsdl:portType name="IStudentService">
     <wsdl:operation name="LoginStudent">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/LoginStudent" message="tns:IStudentService_LoginStudent_InputMessage" />
@@ -77,6 +83,10 @@
     <wsdl:operation name="GetHomeworksByStudent">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetHomeworksByStudent" message="tns:IStudentService_GetHomeworksByStudent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetHomeworksByStudentResponse" message="tns:IStudentService_GetHomeworksByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMarksByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetMarksByStudent" message="tns:IStudentService_GetMarksByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetMarksByStudentResponse" message="tns:IStudentService_GetMarksByStudent_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStudentService" type="tns:IStudentService">
@@ -137,6 +147,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetHomeworksByStudent">
       <soap:operation soapAction="http://tempuri.org/IStudentService/GetHomeworksByStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMarksByStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudentService/GetMarksByStudent" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

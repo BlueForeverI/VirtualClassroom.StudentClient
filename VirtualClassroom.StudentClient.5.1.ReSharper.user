@@ -15,8 +15,8 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="842" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="368" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1311" fromTop="17" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="343" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="1173" fromTop="21" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="846" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="505" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="253" fromTop="3" />
@@ -37,10 +37,11 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1510" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="458" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1330" fromTop="17" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="871" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="690" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="1548" fromTop="26" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="1206" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="788" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="0" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="846" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="893" fromTop="3" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -60,12 +61,12 @@
       <Item value="StudentServiceClient`0" priority="0" />
       <Item value="if" priority="3" />
       <Item value="clientInstance" priority="2" />
-      <Item value="new" priority="3" />
+      <Item value="new" priority="4" />
       <Item value="StudentServiceClient" priority="0" />
       <Item value="return" priority="0" />
       <Item value="ClientManager`0" priority="1" />
       <Item value="Student`0" priority="1" />
-      <Item value="client" priority="4" />
+      <Item value="client" priority="5" />
       <Item value="txtUsername" priority="0" />
       <Item value="txtPassword" priority="0" />
       <Item value="student" priority="1" />
@@ -87,10 +88,10 @@
       <Item value="openFileDialog" priority="3" />
       <Item value="OpenFileDialog" priority="0" />
       <Item value="File" priority="0" />
-      <Item value="MainWindow`0" priority="3" />
+      <Item value="MainWindow`0" priority="4" />
       <Item value="int" priority="0" />
       <Item value="dynamic" priority="0" />
-      <Item value="var" priority="2" />
+      <Item value="var" priority="3" />
       <Item value="ToList`1" priority="0" />
       <Item value="from" priority="1" />
       <Item value="subjects" priority="0" />
@@ -99,6 +100,7 @@
       <Item value="l" priority="0" />
       <Item value="select" priority="0" />
       <Item value="h" priority="1" />
+      <Item value="Mark`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.ClientManager">
       <Item value="GetClient`0" priority="1" />
@@ -109,6 +111,7 @@
       <Item value="GetSubjectsByStudent`0" priority="0" />
       <Item value="GetHomeworksByStudent`0" priority="0" />
       <Item value="GetLessonsByStudent`0" priority="0" />
+      <Item value="GetMarksByStudent`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
       <Item value="Template" priority="0" />
@@ -154,7 +157,7 @@
       <Item value="ReadAllBytes`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.MainWindow">
-      <Item value="StudentId" priority="3" />
+      <Item value="StudentId" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
       <Item value="Parse`0" priority="0" />

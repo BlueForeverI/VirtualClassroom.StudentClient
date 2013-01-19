@@ -12,8 +12,9 @@
             <DataGrid x:Name="dataGridMarks" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Date" Binding="{Binding Path=Date}" />
-                    <DataGridTextColumn Header="Subject" Binding="{Binding Path=Subject}" />
-                    <DataGridTextColumn Header="Mark" Binding="{Binding Path=Mark}" />
+                    <DataGridTextColumn Header="Subject Name" Binding="{Binding Path=SubjectName}" />
+                    <DataGridTextColumn Header="Lesson Name" Binding="{Binding Path=LessonName}" />  
+                    <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}" />
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>

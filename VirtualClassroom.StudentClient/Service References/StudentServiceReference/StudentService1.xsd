@@ -98,4 +98,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetMarksByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMarksByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" minOccurs="0" name="GetMarksByStudentResult" nillable="true" type="q8:ArrayOfMark" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

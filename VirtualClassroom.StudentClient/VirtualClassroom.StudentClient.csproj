@@ -140,6 +140,9 @@
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Lesson.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Mark.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Student.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

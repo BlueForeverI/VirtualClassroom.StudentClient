@@ -26,20 +26,9 @@ namespace VirtualClassroom.StudentClient
         {
             InitializeComponent();
 
-            var subjects = client.GetSubjectsByStudent(MainWindow.StudentId).ToList();
-            var lessons = client.GetLessonsByStudent(MainWindow.StudentId);
-            var items = (from h in client.GetHomeworksByStudent(MainWindow.StudentId)
-                         from s in subjects
-                         from l in lessons
-                         where h.LessonId == l.Id && l.SubjectId == s.Id && h.Mark != null
-                         select new
-                                    {
-                                        Date = h.Date,
-                                        Subject = s.Name,
-                                        Mark = h.Mark
-                                    });
+            var marks = client.GetMarksByStudent(MainWindow.StudentId);
 
-            this.dataGridMarks.ItemsSource = items;
+            this.dataGridMarks.ItemsSource = marks;
         }
     }
 }
