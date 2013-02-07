@@ -8,29 +8,26 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="734" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="530" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1520" fromTop="24" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3686" fromTop="44" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="842" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="368" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1311" fromTop="17" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="846" fromTop="13" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="505" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="470" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1705" fromTop="43" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="378" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="635" fromTop="6" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="253" fromTop="3" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="934" fromTop="4" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="837" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="1215" fromTop="4" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="232" fromTop="9" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="530" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="654" fromTop="11" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="798" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1342" fromTop="32" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1520" fromTop="24" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="684" fromTop="11" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="828" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="2078" fromTop="24" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="953" fromTop="28" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="830" fromTop="27" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="815" fromTop="7" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1138" fromTop="22" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1534" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3686" fromTop="20" />
@@ -42,6 +39,16 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="0" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="846" fromTop="13" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="893" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="330" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="1196" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="470" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1915" fromTop="35" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1022" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1229" fromTop="15" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1705" fromTop="28" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="924" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="405" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="702" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -65,7 +72,7 @@
       <Item value="StudentServiceClient" priority="0" />
       <Item value="return" priority="0" />
       <Item value="ClientManager`0" priority="1" />
-      <Item value="Student`0" priority="1" />
+      <Item value="Student`0" priority="2" />
       <Item value="client" priority="5" />
       <Item value="txtUsername" priority="0" />
       <Item value="txtPassword" priority="0" />
@@ -106,7 +113,7 @@
       <Item value="GetClient`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:VirtualClassroom.StudentClient.StudentServiceReference.StudentServiceClient">
-      <Item value="LoginStudent`0" priority="0" />
+      <Item value="LoginStudent`0" priority="1" />
       <Item value="AddHomework`0" priority="0" />
       <Item value="GetSubjectsByStudent`0" priority="0" />
       <Item value="GetHomeworksByStudent`0" priority="0" />
@@ -118,7 +125,7 @@
       <Item value="Text" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:VirtualClassroom.StudentClient.LoginWindow">
-      <Item value="Student" priority="1" />
+      <Item value="Student" priority="2" />
       <Item value="DialogResult" priority="1" />
       <Item value="Close`0" priority="1" />
       <Item value="ShowDialog`0" priority="0" />
