@@ -1,11 +1,11 @@
 ﻿<Window x:Class="VirtualClassroom.StudentClient.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Student Client" Height="350" Width="525"
+        Title="Student Client" Height="350" Width="600"
         Background="{DynamicResource WindowBackgroundBrush}">
     <Grid>
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
-            <WrapPanel x:Name="navigation" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <WrapPanel x:Name="navigation" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 10 0 20">
                 <Button x:Name="btnViewLessons" Click="btnViewLessons_Click" Padding="20">View Lessons</Button>
                 <Button x:Name="btnViewMarks" Click="btnViewMarks_Click" Padding="20">View Marks</Button>
             </WrapPanel>

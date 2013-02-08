@@ -8,8 +8,8 @@
 
     <Grid>
         <GroupBox Header="Lessons">
-            <WrapPanel>
-                <DataGrid x:Name="dataGridLessons" AutoGenerateColumns="False">
+            <StackPanel Orientation="Horizontal">
+                <DataGrid x:Name="dataGridLessons" AutoGenerateColumns="False" Margin="0 0 10 0" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
                         <DataGridTextColumn Header="Subject" Binding="{Binding Path=Subject}" />
@@ -22,7 +22,7 @@
                     <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Download Homework</Button>
                     <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Add Homework</Button>
                 </StackPanel>
-            </WrapPanel>
+            </StackPanel>
         </GroupBox>
     </Grid>
 </Page>

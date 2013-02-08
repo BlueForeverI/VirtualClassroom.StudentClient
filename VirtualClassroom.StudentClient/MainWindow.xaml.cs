@@ -26,9 +26,12 @@ namespace VirtualClassroom.StudentClient
             {
                 MessageBox.Show("Login successfull. Welcome!");
                 StudentId = loginWindow.Student.Id;
+                InitializeComponent();
             }
-
-            InitializeComponent();
+            else
+            {
+                this.Close();
+            }
         }
 
         public static int StudentId { get; private set; }
