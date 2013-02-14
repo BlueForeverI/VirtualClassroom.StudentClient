@@ -1,7 +1,7 @@
 ﻿<Window x:Class="VirtualClassroom.StudentClient.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Student Client" Height="350" Width="600"
+        Title="Student Client" Height="350" Width="650"
         Background="{DynamicResource WindowBackgroundBrush}">
     <Grid>
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">

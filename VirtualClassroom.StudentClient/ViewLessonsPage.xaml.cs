@@ -29,20 +29,20 @@ namespace VirtualClassroom.StudentClient
         {
             InitializeComponent();
 
-            var subjects = client.GetSubjectsByStudent(MainWindow.StudentId);
-            var lessons = (from l in client.GetLessonsByStudent(MainWindow.StudentId)
-                           from s in subjects
-                           where s.Id == l.SubjectId
-                           select new
-                                      {
-                                          Id = l.Id,
-                                          Name = l.Name,
-                                          Subject = s.Name,
-                                          Date = l.Date,
-                                          HomeworkDeadline = l.HomeworkDeadline
-                                      }).ToList();
+            //var subjects = client.GetSubjectsByStudent(MainWindow.StudentId);
+            //var lessons = (from l in client.GetLessonsByStudent(MainWindow.StudentId)
+            //               from s in subjects
+            //               where s.Id == l.SubjectId
+            //               select new
+            //                          {
+            //                              Id = l.Id,
+            //                              Name = l.Name,
+            //                              Subject = s.Name,
+            //                              Date = l.Date,
+            //                              HomeworkDeadline = l.HomeworkDeadline
+            //                          }).ToList();
 
-            this.dataGridLessons.ItemsSource = lessons;
+            this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.StudentId);
         }
 
         private void btnDownloadContent_Click(object sender, RoutedEventArgs e)

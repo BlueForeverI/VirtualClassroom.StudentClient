@@ -4,7 +4,8 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services" />
+      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" />
+      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Views" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IStudentService_LoginStudent_InputMessage">
@@ -13,17 +14,11 @@
   <wsdl:message name="IStudentService_LoginStudent_OutputMessage">
     <wsdl:part name="parameters" element="tns:LoginStudentResponse" />
   </wsdl:message>
-  <wsdl:message name="IStudentService_GetLessonsByStudent_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetLessonsByStudent" />
+  <wsdl:message name="IStudentService_GetLessonViewsByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonViewsByStudent" />
   </wsdl:message>
-  <wsdl:message name="IStudentService_GetLessonsByStudent_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetLessonsByStudentResponse" />
-  </wsdl:message>
-  <wsdl:message name="IStudentService_GetSubjectsByStudent_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetSubjectsByStudent" />
-  </wsdl:message>
-  <wsdl:message name="IStudentService_GetSubjectsByStudent_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetSubjectsByStudentResponse" />
+  <wsdl:message name="IStudentService_GetLessonViewsByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonViewsByStudentResponse" />
   </wsdl:message>
   <wsdl:message name="IStudentService_DownloadLessonContent_InputMessage">
     <wsdl:part name="parameters" element="tns:DownloadLessonContent" />
@@ -60,13 +55,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/LoginStudent" message="tns:IStudentService_LoginStudent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/LoginStudentResponse" message="tns:IStudentService_LoginStudent_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetLessonsByStudent">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetLessonsByStudent" message="tns:IStudentService_GetLessonsByStudent_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetLessonsByStudentResponse" message="tns:IStudentService_GetLessonsByStudent_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="GetSubjectsByStudent">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetSubjectsByStudent" message="tns:IStudentService_GetSubjectsByStudent_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetSubjectsByStudentResponse" message="tns:IStudentService_GetSubjectsByStudent_OutputMessage" />
+    <wsdl:operation name="GetLessonViewsByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetLessonViewsByStudent" message="tns:IStudentService_GetLessonViewsByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetLessonViewsByStudentResponse" message="tns:IStudentService_GetLessonViewsByStudent_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="DownloadLessonContent">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonContent" message="tns:IStudentService_DownloadLessonContent_InputMessage" />
@@ -100,17 +91,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetLessonsByStudent">
-      <soap:operation soapAction="http://tempuri.org/IStudentService/GetLessonsByStudent" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetSubjectsByStudent">
-      <soap:operation soapAction="http://tempuri.org/IStudentService/GetSubjectsByStudent" style="document" />
+    <wsdl:operation name="GetLessonViewsByStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudentService/GetLessonViewsByStudent" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

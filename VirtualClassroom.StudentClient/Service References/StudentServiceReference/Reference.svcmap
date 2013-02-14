@@ -22,9 +22,10 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="StudentService.wsdl" MetadataType="Wsdl" ID="dbc6dc33-d31b-4b9f-9e3d-821aec95f401" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?wsdl" />
-    <MetadataFile FileName="StudentService.xsd" MetadataType="Schema" ID="f0551240-0359-4034-a6e9-f78c2170c6e5" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" />
-    <MetadataFile FileName="StudentService1.xsd" MetadataType="Schema" ID="d833d8ec-2e6e-4827-ad56-d74e64671749" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd0" />
     <MetadataFile FileName="StudentService.disco" MetadataType="Disco" ID="94718c21-53d4-4422-93ce-00ac76a14e87" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?disco" />
+    <MetadataFile FileName="StudentService.xsd" MetadataType="Schema" ID="f0551240-0359-4034-a6e9-f78c2170c6e5" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="StudentService3.xsd" MetadataType="Schema" ID="cef0ef07-263d-4447-ab90-a7875de583fe" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="StudentService1.xsd" MetadataType="Schema" ID="d833d8ec-2e6e-4827-ad56-d74e64671749" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd0" />
     <MetadataFile FileName="StudentService2.xsd" MetadataType="Schema" ID="4f2d4f48-24fe-4a27-b130-b0d52b5266a0" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
