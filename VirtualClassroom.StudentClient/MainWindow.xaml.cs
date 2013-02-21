@@ -45,5 +45,10 @@ namespace VirtualClassroom.StudentClient
         {
             this.frameMainContent.Source = new Uri("ViewMarksPage.xaml", UriKind.Relative);
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            ClientManager.CloseClient();
+        }
     }
 }

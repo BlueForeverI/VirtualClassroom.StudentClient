@@ -8,22 +8,19 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="530" fromTop="19" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="378" fromTop="8" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="4563" fromTop="35" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="564" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="712" fromTop="13" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1535" fromTop="24" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="951" fromTop="7" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1253" fromTop="26" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="428" fromTop="14" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="739" fromTop="7" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="742" fromTop="9" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="347" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="708" fromTop="27" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1582" fromTop="39" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="790" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="2082" fromTop="24" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1034" fromTop="28" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1219" fromTop="22" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1580" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3755" fromTop="20" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1411" fromTop="17" />
@@ -34,11 +31,11 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="893" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="330" fromTop="5" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="1325" fromTop="13" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1919" fromTop="35" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1233" fromTop="15" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1709" fromTop="28" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="943" fromTop="13" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="520" fromTop="7" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1982" fromTop="35" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1296" fromTop="15" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1772" fromTop="28" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="977" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="554" fromTop="7" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="0" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="4563" fromTop="35" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="653" fromTop="11" />
@@ -46,11 +43,14 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="498" fromTop="4" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1535" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="951" fromTop="4" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1126" fromTop="22" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1189" fromTop="22" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3793" fromTop="26" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="867" fromTop="13" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1688" fromTop="26" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="253" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="350" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1572" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="708" fromTop="27" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="790" fromTop="12" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -65,21 +65,21 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="static" priority="2" />
-      <Item value="public" priority="1" />
+      <Item value="static" priority="3" />
+      <Item value="public" priority="2" />
       <Item value="StudentServiceClient`0" priority="0" />
-      <Item value="if" priority="3" />
-      <Item value="clientInstance" priority="2" />
+      <Item value="if" priority="4" />
+      <Item value="clientInstance" priority="4" />
       <Item value="new" priority="4" />
       <Item value="StudentServiceClient" priority="0" />
       <Item value="return" priority="0" />
-      <Item value="ClientManager`0" priority="1" />
+      <Item value="ClientManager`0" priority="3" />
       <Item value="Student`0" priority="2" />
-      <Item value="client" priority="6" />
+      <Item value="client" priority="7" />
       <Item value="txtUsername" priority="0" />
       <Item value="txtPassword" priority="0" />
       <Item value="student" priority="1" />
-      <Item value="null" priority="0" />
+      <Item value="null" priority="1" />
       <Item value="true" priority="1" />
       <Item value="this" priority="1" />
       <Item value="LoginWindow`0" priority="0" />
@@ -110,9 +110,11 @@
       <Item value="select" priority="0" />
       <Item value="h" priority="1" />
       <Item value="Mark`0" priority="0" />
+      <Item value="void" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.ClientManager">
       <Item value="GetClient`0" priority="1" />
+      <Item value="CloseClient`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:VirtualClassroom.StudentClient.StudentServiceReference.StudentServiceClient">
       <Item value="LoginStudent`0" priority="1" />
@@ -122,6 +124,7 @@
       <Item value="GetLessonsByStudent`0" priority="0" />
       <Item value="GetMarksByStudent`0" priority="0" />
       <Item value="GetLessonViewsByStudent`0" priority="0" />
+      <Item value="Close`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
       <Item value="Template" priority="0" />

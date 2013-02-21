@@ -19,5 +19,13 @@ namespace VirtualClassroom.StudentClient
 
             return clientInstance;
         }
+
+        public static void CloseClient()
+        {
+            if (clientInstance != null)
+            {
+                clientInstance.Close();
+            }
+        }
     }
 }
