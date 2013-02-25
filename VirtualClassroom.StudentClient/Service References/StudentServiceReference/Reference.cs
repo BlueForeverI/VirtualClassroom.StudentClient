@@ -465,6 +465,9 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         private System.DateTime DateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool HasHomeworkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> HomeworkDeadlineField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -472,6 +475,9 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool SentHomeworkField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SubjectField;
@@ -495,6 +501,19 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
                 if ((this.DateField.Equals(value) != true)) {
                     this.DateField = value;
                     this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool HasHomework {
+            get {
+                return this.HasHomeworkField;
+            }
+            set {
+                if ((this.HasHomeworkField.Equals(value) != true)) {
+                    this.HasHomeworkField = value;
+                    this.RaisePropertyChanged("HasHomework");
                 }
             }
         }
@@ -534,6 +553,19 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
                 if ((object.ReferenceEquals(this.NameField, value) != true)) {
                     this.NameField = value;
                     this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool SentHomework {
+            get {
+                return this.SentHomeworkField;
+            }
+            set {
+                if ((this.SentHomeworkField.Equals(value) != true)) {
+                    this.SentHomeworkField = value;
+                    this.RaisePropertyChanged("SentHomework");
                 }
             }
         }
