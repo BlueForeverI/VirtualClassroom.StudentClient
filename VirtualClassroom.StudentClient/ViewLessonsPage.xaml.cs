@@ -54,7 +54,7 @@ namespace VirtualClassroom.StudentClient
             saveFileDialog.FileName = file.Filename;
             if(saveFileDialog.ShowDialog() == true)
             {
-                System.IO.File.WriteAllBytes(saveFileDialog.FileName, file.Content);
+                File.WriteAllText(saveFileDialog.FileName, new UTF8Encoding(true).GetString(file.Content), new UTF8Encoding(true));
                 MessageBox.Show("Lesson content downloaded successfully!");
             }
         }
@@ -68,19 +68,19 @@ namespace VirtualClassroom.StudentClient
             saveFileDialog.FileName = file.Filename;
             if (saveFileDialog.ShowDialog() == true)
             {
-                System.IO.File.WriteAllBytes(saveFileDialog.FileName, file.Content);
+                File.WriteAllText(saveFileDialog.FileName, new UTF8Encoding(true).GetString(file.Content), new UTF8Encoding(true));
                 MessageBox.Show("Lesson homework downloaded successfully!");
             }
         }
 
         private void btnAddHomework_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if(openFileDialog.ShowDialog() == true)
+            AddHomeworkWindow window = new AddHomeworkWindow();
+            if(window.ShowDialog() == true)
             {
                 Homework homework = new Homework();
-                homework.Filename = new FileInfo(openFileDialog.FileName).Name;
-                homework.Content = File.ReadAllBytes(openFileDialog.FileName);
+                homework.Filename = window.HomeworkFilename;
+                homework.Content = window.HomeworkContent;
                 homework.StudentId = MainWindow.StudentId;
                 homework.LessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
                 client.AddHomework(homework);
