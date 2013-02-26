@@ -29,62 +29,121 @@ namespace VirtualClassroom.StudentClient
         {
             InitializeComponent();
 
-            //var subjects = client.GetSubjectsByStudent(MainWindow.StudentId);
-            //var lessons = (from l in client.GetLessonsByStudent(MainWindow.StudentId)
-            //               from s in subjects
-            //               where s.Id == l.SubjectId
-            //               select new
-            //                          {
-            //                              Id = l.Id,
-            //                              Name = l.Name,
-            //                              Subject = s.Name,
-            //                              Date = l.Date,
-            //                              HomeworkDeadline = l.HomeworkDeadline
-            //                          }).ToList();
-
             this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.StudentId);
         }
 
         private void btnDownloadContent_Click(object sender, RoutedEventArgs e)
         {
-            int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
-            StudentServiceReference.File file = client.DownloadLessonContent(lessonId);
-
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.FileName = file.Filename;
-            if(saveFileDialog.ShowDialog() == true)
+            try
             {
-                File.WriteAllText(saveFileDialog.FileName, new UTF8Encoding(true).GetString(file.Content), new UTF8Encoding(true));
-                MessageBox.Show("Lesson content downloaded successfully!");
+                if(this.dataGridLessons.SelectedIndex < 0)
+                {
+                    MessageBox.Show("You have not selected any lessons!");
+                }
+                else if (this.dataGridLessons.SelectedItems.Count > 1)
+                {
+                    MessageBox.Show("You must select a single lesson!");
+                }
+                else
+                {
+                    int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
+                    StudentServiceReference.File file = client.DownloadLessonContent(lessonId);
+
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.FileName = file.Filename;
+                    if (saveFileDialog.ShowDialog() == true)
+                    {
+                        File.WriteAllText(saveFileDialog.FileName, 
+                                          new UTF8Encoding(true).GetString(file.Content),
+                                          new UTF8Encoding(true));
+
+                        MessageBox.Show("Lesson content downloaded successfully!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnDownloadHomework_Click(object sender, RoutedEventArgs e)
         {
-            int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
-            StudentServiceReference.File file = client.DownloadLessonHomework(lessonId);
-
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.FileName = file.Filename;
-            if (saveFileDialog.ShowDialog() == true)
+            try
             {
-                File.WriteAllText(saveFileDialog.FileName, new UTF8Encoding(true).GetString(file.Content), new UTF8Encoding(true));
-                MessageBox.Show("Lesson homework downloaded successfully!");
+                if(this.dataGridLessons.SelectedIndex < 0)
+                {
+                    MessageBox.Show("You have not selected any lessons!");
+                }
+                else if (this.dataGridLessons.SelectedItems.Count > 1)
+                {
+                    MessageBox.Show("You must select a single lesson!");
+                }
+                else if (!(this.dataGridLessons.SelectedItem as dynamic).HasHomework)
+                {
+                    MessageBox.Show("This lesson does not have a homework!");
+                }
+                else
+                {
+                    int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
+                    StudentServiceReference.File file = client.DownloadLessonHomework(lessonId);
+
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.FileName = file.Filename;
+                    if (saveFileDialog.ShowDialog() == true)
+                    {
+                        File.WriteAllText(saveFileDialog.FileName, new UTF8Encoding(true).GetString(file.Content),
+                                          new UTF8Encoding(true));
+                        MessageBox.Show("Lesson homework downloaded successfully!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnAddHomework_Click(object sender, RoutedEventArgs e)
         {
-            AddHomeworkWindow window = new AddHomeworkWindow();
-            if(window.ShowDialog() == true)
+            try
             {
-                Homework homework = new Homework();
-                homework.Filename = window.HomeworkFilename;
-                homework.Content = window.HomeworkContent;
-                homework.StudentId = MainWindow.StudentId;
-                homework.LessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
-                client.AddHomework(homework);
-                MessageBox.Show("Homework added successfully!");
+                if(this.dataGridLessons.SelectedIndex < 0)
+                {
+                    MessageBox.Show("You have not selected any lessons!");
+                }
+                else if (this.dataGridLessons.SelectedItems.Count > 1)
+                {
+                    MessageBox.Show("You must select a single lesson!");
+                }
+                else if(!(this.dataGridLessons.SelectedItem as dynamic).HasHomework)
+                {
+                    MessageBox.Show("This lesson does not have a homework!");
+                }
+                else if((this.dataGridLessons.SelectedItem as dynamic).SentHomework)
+                {
+                    MessageBox.Show("You have already sent a homework for this lesson!");
+                }
+                else
+                {
+                    AddHomeworkWindow window = new AddHomeworkWindow();
+                    if(window.ShowDialog() == true)
+                    {
+                        Homework homework = new Homework();
+                        homework.Filename = window.HomeworkFilename;
+                        homework.Content = window.HomeworkContent;
+                        homework.StudentId = MainWindow.StudentId;
+                        homework.LessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
+                        client.AddHomework(homework);
+
+                        this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.StudentId);
+                        MessageBox.Show("Homework added successfully!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -29,12 +29,21 @@ namespace VirtualClassroom.StudentClient
             InitializeComponent();
         }
 
+        private void ValidateInput()
+        {
+            if(string.IsNullOrEmpty(this.txtHomeworkPath.Text) || string.IsNullOrEmpty(this.txtHomeworkPath.Text))
+            {
+                throw new Exception("You must select content for the homework!");
+            }
+        }
+
         private void btnBrowseHomework_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Multiselect = false;
             if (dialog.ShowDialog() == true)
             {
+                this.txtHomeworkPath.IsEnabled = true;
                 this.txtHomeworkPath.Text = dialog.FileName;
             }
         }
@@ -55,20 +64,29 @@ namespace VirtualClassroom.StudentClient
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (this.txtHomeworkPath.IsEnabled == false)
+            try
             {
+                ValidateInput();
 
-                this.HomeworkContent = this.HomeworkContent;
-                this.HomeworkFilename = "Homework.html"; //to refactor
+                if (this.txtHomeworkPath.IsEnabled == false)
+                {
+
+                    this.HomeworkContent = this.HomeworkContent;
+                    this.HomeworkFilename = "Homework.html"; //to refactor
+                }
+                else
+                {
+
+                    this.HomeworkContent = System.IO.File.ReadAllBytes(txtHomeworkPath.Text);
+                    this.HomeworkFilename = new FileInfo(txtHomeworkPath.Text).Name;
+                }
+
+                this.DialogResult = true;
             }
-            else
+            catch(Exception ex)
             {
-
-                this.HomeworkContent = System.IO.File.ReadAllBytes(txtHomeworkPath.Text);
-                this.HomeworkFilename = new FileInfo(txtHomeworkPath.Text).Name;
+                MessageBox.Show(ex.Message, "Invalid input");
             }
-
-            this.DialogResult = true;
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)

@@ -24,7 +24,6 @@ namespace VirtualClassroom.StudentClient
             LoginWindow loginWindow = new LoginWindow();
             if(loginWindow.ShowDialog() == true)
             {
-                MessageBox.Show("Login successfull. Welcome!");
                 StudentId = loginWindow.Student.Id;
                 InitializeComponent();
             }
@@ -38,12 +37,26 @@ namespace VirtualClassroom.StudentClient
 
         private void btnViewLessons_Click(object sender, RoutedEventArgs e)
         {
-            this.frameMainContent.Source = new Uri("ViewLessonsPage.xaml", UriKind.Relative);
+            try
+            {
+                this.frameMainContent.Source = new Uri("ViewLessonsPage.xaml", UriKind.Relative);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnViewMarks_Click(object sender, RoutedEventArgs e)
         {
-            this.frameMainContent.Source = new Uri("ViewMarksPage.xaml", UriKind.Relative);
+            try
+            {
+                this.frameMainContent.Source = new Uri("ViewMarksPage.xaml", UriKind.Relative);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
