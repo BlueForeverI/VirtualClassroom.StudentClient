@@ -18,7 +18,7 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://virtualclassroomservices.apphb.com/Services/StudentService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://virtualclassroomservices.apphb.com/Services/StudentService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="StudentService.wsdl" MetadataType="Wsdl" ID="dbc6dc33-d31b-4b9f-9e3d-821aec95f401" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?wsdl" />

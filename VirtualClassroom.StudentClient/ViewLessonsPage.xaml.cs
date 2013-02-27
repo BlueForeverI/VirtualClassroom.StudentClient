@@ -29,7 +29,7 @@ namespace VirtualClassroom.StudentClient
         {
             InitializeComponent();
 
-            this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.StudentId);
+            this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.Student.Id);
         }
 
         private void btnDownloadContent_Click(object sender, RoutedEventArgs e)
@@ -47,15 +47,22 @@ namespace VirtualClassroom.StudentClient
                 else
                 {
                     int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
-                    StudentServiceReference.File file = client.DownloadLessonContent(lessonId);
+                    StudentServiceReference.File lesson = client.DownloadLessonContent(lessonId);
 
                     SaveFileDialog saveFileDialog = new SaveFileDialog();
-                    saveFileDialog.FileName = file.Filename;
+                    saveFileDialog.FileName = lesson.Filename;
                     if (saveFileDialog.ShowDialog() == true)
                     {
-                        File.WriteAllText(saveFileDialog.FileName, 
-                                          new UTF8Encoding(true).GetString(file.Content),
-                                          new UTF8Encoding(true));
+                        if (lesson.Filename.EndsWith(".html"))
+                        {
+                            System.IO.File.WriteAllText(saveFileDialog.FileName,
+                                                        Encoding.UTF8.GetString(lesson.Content),
+                                                        Encoding.UTF8);
+                        }
+                        else
+                        {
+                            System.IO.File.WriteAllBytes(saveFileDialog.FileName, lesson.Content);
+                        }
 
                         MessageBox.Show("Lesson content downloaded successfully!");
                     }
@@ -86,14 +93,23 @@ namespace VirtualClassroom.StudentClient
                 else
                 {
                     int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
-                    StudentServiceReference.File file = client.DownloadLessonHomework(lessonId);
+                    StudentServiceReference.File homework = client.DownloadLessonHomework(lessonId);
 
                     SaveFileDialog saveFileDialog = new SaveFileDialog();
-                    saveFileDialog.FileName = file.Filename;
+                    saveFileDialog.FileName = homework.Filename;
                     if (saveFileDialog.ShowDialog() == true)
                     {
-                        File.WriteAllText(saveFileDialog.FileName, new UTF8Encoding(true).GetString(file.Content),
-                                          new UTF8Encoding(true));
+                        if (homework.Filename.EndsWith(".html"))
+                        {
+                            System.IO.File.WriteAllText(saveFileDialog.FileName,
+                                                       Encoding.UTF8.GetString(homework.Content),
+                                                       Encoding.UTF8);
+                        }
+                        else
+                        {
+                            System.IO.File.WriteAllBytes(saveFileDialog.FileName, homework.Content);
+                        }
+
                         MessageBox.Show("Lesson homework downloaded successfully!");
                     }
                 }
@@ -127,16 +143,17 @@ namespace VirtualClassroom.StudentClient
                 else
                 {
                     AddHomeworkWindow window = new AddHomeworkWindow();
+                    window.Lesson = this.dataGridLessons.SelectedItem as LessonView;
                     if(window.ShowDialog() == true)
                     {
                         Homework homework = new Homework();
                         homework.Filename = window.HomeworkFilename;
                         homework.Content = window.HomeworkContent;
-                        homework.StudentId = MainWindow.StudentId;
+                        homework.StudentId = MainWindow.Student.Id;
                         homework.LessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
                         client.AddHomework(homework);
 
-                        this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.StudentId);
+                        this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.Student.Id);
                         MessageBox.Show("Homework added successfully!");
                     }
                 }

@@ -26,7 +26,7 @@ namespace VirtualClassroom.StudentClient
         {
             InitializeComponent();
 
-            var marks = client.GetMarksByStudent(MainWindow.StudentId);
+            var marks = client.GetMarksByStudent(MainWindow.Student.Id);
 
             this.dataGridMarks.ItemsSource = marks;
         }

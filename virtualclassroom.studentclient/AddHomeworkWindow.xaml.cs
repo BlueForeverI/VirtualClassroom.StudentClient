@@ -23,6 +23,7 @@ namespace VirtualClassroom.StudentClient
     {
         public byte[] HomeworkContent { get; set; }
         public string HomeworkFilename { get; set; }
+        public LessonView Lesson { get; set; }
 
         public AddHomeworkWindow()
         {
@@ -72,7 +73,10 @@ namespace VirtualClassroom.StudentClient
                 {
 
                     this.HomeworkContent = this.HomeworkContent;
-                    this.HomeworkFilename = "Homework.html"; //to refactor
+                    this.HomeworkFilename = string.Format("{0}.{1} - {2}.{3}.{4}.html",
+                                                          this.Lesson.Subject, this.Lesson.Name,
+                                                          MainWindow.Student.FirstName, MainWindow.Student.MiddleName,
+                                                          MainWindow.Student.LastName);
                 }
                 else
                 {

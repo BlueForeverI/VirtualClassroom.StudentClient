@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VirtualClassroom.StudentClient.StudentServiceReference;
 
 namespace VirtualClassroom.StudentClient
 {
@@ -24,7 +25,7 @@ namespace VirtualClassroom.StudentClient
             LoginWindow loginWindow = new LoginWindow();
             if(loginWindow.ShowDialog() == true)
             {
-                StudentId = loginWindow.Student.Id;
+                Student = loginWindow.Student;
                 InitializeComponent();
             }
             else
@@ -33,7 +34,7 @@ namespace VirtualClassroom.StudentClient
             }
         }
 
-        public static int StudentId { get; private set; }
+        public static Student Student { get; private set; }
 
         private void btnViewLessons_Click(object sender, RoutedEventArgs e)
         {
