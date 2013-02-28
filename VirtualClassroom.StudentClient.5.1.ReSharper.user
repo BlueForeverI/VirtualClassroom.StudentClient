@@ -11,7 +11,6 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="378" fromTop="8" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="4563" fromTop="35" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="708" fromTop="27" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="790" fromTop="12" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="323" fromTop="11" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml" caret="960" fromTop="2" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml.cs" caret="1039" fromTop="20" />
@@ -25,11 +24,10 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1001" fromTop="2" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5835" fromTop="11" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="2789" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="537" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="673" fromTop="14" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1309" fromTop="17" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="6585" fromTop="26" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5617" fromTop="22" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5390" fromTop="19" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3433" fromTop="13" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="408" fromTop="6" />
@@ -55,9 +53,11 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="787" fromTop="16" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5835" fromTop="11" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="2789" fromTop="15" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="115" fromTop="4" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="317" fromTop="9" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="537" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="738" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="738" fromTop="9" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="673" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="311" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1309" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -120,7 +120,7 @@
       <Item value="void" priority="1" />
       <Item value="StudentClient" priority="1" />
       <Item value="byte" priority="0" />
-      <Item value="string" priority="3" />
+      <Item value="string" priority="4" />
       <Item value="false" priority="1" />
       <Item value="AddHomeworkWindow`0" priority="0" />
       <Item value="window" priority="4" />
@@ -144,6 +144,10 @@
       <Item value="else" priority="2" />
       <Item value="LessonView`0" priority="1" />
       <Item value="as" priority="0" />
+      <Item value="username" priority="0" />
+      <Item value="Crypto`0" priority="1" />
+      <Item value="password" priority="0" />
+      <Item value="secret" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.ClientManager">
       <Item value="GetClient`0" priority="1" />
@@ -283,6 +287,10 @@
     <ItemStatistics item="Qualified:VirtualClassroom.StudentClient.StudentServiceReference.LessonView">
       <Item value="Subject" priority="0" />
       <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@VirtualClassroom.Services.Services.Crypto">
+      <Item value="EncryptStringAES`0" priority="1" />
+      <Item value="GenerateRandomSecret`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

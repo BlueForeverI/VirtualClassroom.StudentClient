@@ -655,11 +655,11 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="StudentServiceReference.IStudentService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="StudentServiceReference.IStudentService", SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IStudentService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/LoginStudent", ReplyAction="http://tempuri.org/IStudentService/LoginStudentResponse")]
-        VirtualClassroom.StudentClient.StudentServiceReference.Student LoginStudent(string username, string password);
+        VirtualClassroom.StudentClient.StudentServiceReference.Student LoginStudent(string usernameCrypt, string passwordCrypt, string secret);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/GetLessonViewsByStudent", ReplyAction="http://tempuri.org/IStudentService/GetLessonViewsByStudentResponse")]
         VirtualClassroom.StudentClient.StudentServiceReference.LessonView[] GetLessonViewsByStudent(int studentId);
@@ -707,8 +707,8 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public VirtualClassroom.StudentClient.StudentServiceReference.Student LoginStudent(string username, string password) {
-            return base.Channel.LoginStudent(username, password);
+        public VirtualClassroom.StudentClient.StudentServiceReference.Student LoginStudent(string usernameCrypt, string passwordCrypt, string secret) {
+            return base.Channel.LoginStudent(usernameCrypt, passwordCrypt, secret);
         }
         
         public VirtualClassroom.StudentClient.StudentServiceReference.LessonView[] GetLessonViewsByStudent(int studentId) {
