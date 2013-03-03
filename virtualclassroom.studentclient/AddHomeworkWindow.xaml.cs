@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Microsoft.Win32;
 using VirtualClassroom.StudentClient.StudentServiceReference;
 
@@ -30,6 +20,9 @@ namespace VirtualClassroom.StudentClient
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Checks whether the user input is valid
+        /// </summary>
         private void ValidateInput()
         {
             if(string.IsNullOrEmpty(this.txtHomeworkPath.Text) 

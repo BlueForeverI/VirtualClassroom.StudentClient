@@ -1,21 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.IO.Packaging;
-using System.Xml;
-using System.Xml.Linq;
 
 namespace VirtualClassroom.StudentClient
 {
@@ -33,7 +22,8 @@ namespace VirtualClassroom.StudentClient
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            this.comboFontFamily.ItemsSource = System.Windows.Media.Fonts.SystemFontFamilies;
+            //load fonts
+            this.comboFontFamily.ItemsSource = Fonts.SystemFontFamilies;
             this.comboFontSize.ItemsSource = new double[] 
             { 
                 3.0, 4.0, 5.0, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 
@@ -148,17 +138,6 @@ namespace VirtualClassroom.StudentClient
             }
         }
 
-        private Color ConvertRgbToColor(string rgbColor)
-        {
-            string rgbValue = rgbColor;
-
-            int redValue = Convert.ToInt32(rgbValue.Substring(0, 2), 16);
-            int greenValue = Convert.ToInt32(rgbValue.Substring(2, 2), 16);
-            int blueValue = Convert.ToInt32(rgbValue.Substring(4, 2), 16);
-
-            return Color.FromRgb((byte)redValue, (byte)greenValue, (byte)blueValue);
-        }
-
         private void btnSubscript_Click(object sender, RoutedEventArgs e)
         {
             var currentAlignment = rtbDocument.Selection.GetPropertyValue(Inline.BaselineAlignmentProperty);
@@ -194,6 +173,11 @@ namespace VirtualClassroom.StudentClient
             }
         }
 
+        /// <summary>
+        /// Normalize generated HTML
+        /// </summary>
+        /// <param name="nativeTags">The raw HTML code</param>
+        /// <returns>Formatted lowercase HTML tags</returns>
         public static string FormatHtml(string nativeTags)
         {
             string upperTags = nativeTags;

@@ -8,56 +8,57 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="378" fromTop="8" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="4563" fromTop="35" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="708" fromTop="27" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="323" fromTop="11" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml" caret="960" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml.cs" caret="1039" fromTop="20" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="673" fromTop="14" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="1799" fromTop="5" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="856" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1135" fromTop="40" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1832" fromTop="11" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="6612" fromTop="159" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="434" fromTop="6" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="1018" fromTop="21" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="1186" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="478" fromTop="16" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="639" fromTop="2" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="708" fromTop="11" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="98" fromTop="2" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="308" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="534" fromTop="17" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="924" fromTop="22" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Crypto.cs" caret="135" fromTop="6" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="440" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml.cs" caret="549" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="395" fromTop="14" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="725" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1450" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="457" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1832" fromTop="11" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="827" fromTop="10" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1119" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="845" fromTop="11" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1104" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1393" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1579" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="2704" fromTop="21" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3149" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3335" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3524" fromTop="21" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="4662" fromTop="16" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5102" fromTop="17" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5288" fromTop="21" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5476" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="5681" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="6612" fromTop="21" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="1028" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="434" fromTop="6" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="749" fromTop="14" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="1033" fromTop="22" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="767" fromTop="15" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="1018" fromTop="21" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="454" fromTop="14" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="738" fromTop="22" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="472" fromTop="15" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="723" fromTop="21" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="241" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="1186" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="1166" fromTop="20" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="2005" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="3252" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="972" fromTop="20" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="1811" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="3058" fromTop="18" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="293" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="735" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="13" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="693" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="98" fromTop="2" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="308" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="281" fromTop="10" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="568" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="924" fromTop="22" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Crypto.cs" caret="7147" fromTop="169" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="13" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="131" fromTop="7" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="13" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="647" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="6063" fromTop="6" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="8189" fromTop="17" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="13" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="725" fromTop="20" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="13" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1450" fromTop="12" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="13" fromTop="0" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
