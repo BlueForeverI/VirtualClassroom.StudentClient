@@ -24,11 +24,15 @@ namespace VirtualClassroom.StudentClient
 
         public ViewMarksPage()
         {
-            InitializeComponent();
-
-            var marks = client.GetMarksByStudent(MainWindow.Student.Id);
-
-            this.dataGridMarks.ItemsSource = marks;
+            try
+            {
+                InitializeComponent();
+                this.dataGridMarks.ItemsSource = client.GetMarksByStudent(MainWindow.Student.Id); ;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

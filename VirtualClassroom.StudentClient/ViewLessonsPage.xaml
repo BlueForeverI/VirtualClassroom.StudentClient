@@ -4,27 +4,27 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-	Title="ViewLessonsPage">
+	Title="Уроци">
 
     <Grid>
-        <GroupBox Header="Lessons"
+        <GroupBox Header="Уроци"
                   Padding="5 10 10 10" HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal">
                 <DataGrid x:Name="dataGridLessons" AutoGenerateColumns="False" Margin="0 0 10 0" 
                           VerticalScrollBarVisibility="Auto" MaxHeight="600">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
-                        <DataGridTextColumn Header="Subject" Binding="{Binding Path=Subject}" />
-                        <DataGridTextColumn Header="Date" Binding="{Binding Path=Date}" />
-                        <DataGridTextColumn Header="Homework Deadline" Binding="{Binding Path=HomeworkDeadline}" />
-                        <DataGridTextColumn Header="Has Homework" Binding="{Binding Path=HasHomework}" />
-                        <DataGridTextColumn Header="Sent Homework" Binding="{Binding Path=SentHomework}" />
+                        <DataGridTextColumn Header="Име" Binding="{Binding Path=Name}" />
+                        <DataGridTextColumn Header="Предмет" Binding="{Binding Path=Subject}" />
+                        <DataGridTextColumn Header="Дата" Binding="{Binding Path=Date}" />
+                        <DataGridTextColumn Header="Краен срок за домашно" Binding="{Binding Path=HomeworkDeadline}" />
+                        <DataGridTextColumn Header="Има домашно" Binding="{Binding Path=HasHomework}" />
+                        <DataGridTextColumn Header="Изпратено домашно" Binding="{Binding Path=SentHomework}" />
                     </DataGrid.Columns>
                 </DataGrid>
                 <StackPanel>
-                    <Button x:Name="btnDownloadContent" Click="btnDownloadContent_Click">Download Content</Button>
-                    <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Download Homework</Button>
-                    <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Add Homework</Button>
+                    <Button x:Name="btnDownloadContent" Click="btnDownloadContent_Click">Изтегли съдържанието</Button>
+                    <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Изтегли домашното</Button>
+                    <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Изпрати домашно</Button>
                 </StackPanel>
             </StackPanel>
         </GroupBox>

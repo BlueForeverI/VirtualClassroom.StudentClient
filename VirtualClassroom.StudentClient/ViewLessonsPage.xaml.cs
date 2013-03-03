@@ -27,9 +27,16 @@ namespace VirtualClassroom.StudentClient
 
         public ViewLessonsPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
 
-            this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.Student.Id);
+                this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.Student.Id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnDownloadContent_Click(object sender, RoutedEventArgs e)
@@ -38,11 +45,11 @@ namespace VirtualClassroom.StudentClient
             {
                 if(this.dataGridLessons.SelectedIndex < 0)
                 {
-                    MessageBox.Show("You have not selected any lessons!");
+                    MessageBox.Show("Не сте избрали урок");
                 }
                 else if (this.dataGridLessons.SelectedItems.Count > 1)
                 {
-                    MessageBox.Show("You must select a single lesson!");
+                    MessageBox.Show("Трябва да изберете точно един урок");
                 }
                 else
                 {
@@ -64,7 +71,7 @@ namespace VirtualClassroom.StudentClient
                             System.IO.File.WriteAllBytes(saveFileDialog.FileName, lesson.Content);
                         }
 
-                        MessageBox.Show("Lesson content downloaded successfully!");
+                        MessageBox.Show("Урокът беше изтеглен успешно");
                     }
                 }
             }
@@ -80,15 +87,15 @@ namespace VirtualClassroom.StudentClient
             {
                 if(this.dataGridLessons.SelectedIndex < 0)
                 {
-                    MessageBox.Show("You have not selected any lessons!");
+                    MessageBox.Show("Не сте избрали урок");
                 }
                 else if (this.dataGridLessons.SelectedItems.Count > 1)
                 {
-                    MessageBox.Show("You must select a single lesson!");
+                    MessageBox.Show("Трябва да изберете точно един урок");
                 }
                 else if (!(this.dataGridLessons.SelectedItem as dynamic).HasHomework)
                 {
-                    MessageBox.Show("This lesson does not have a homework!");
+                    MessageBox.Show("Този урок няма домашно");
                 }
                 else
                 {
@@ -110,7 +117,7 @@ namespace VirtualClassroom.StudentClient
                             System.IO.File.WriteAllBytes(saveFileDialog.FileName, homework.Content);
                         }
 
-                        MessageBox.Show("Lesson homework downloaded successfully!");
+                        MessageBox.Show("Домашното беше изтеглено успешно");
                     }
                 }
             }
@@ -126,19 +133,19 @@ namespace VirtualClassroom.StudentClient
             {
                 if(this.dataGridLessons.SelectedIndex < 0)
                 {
-                    MessageBox.Show("You have not selected any lessons!");
+                    MessageBox.Show("Не сте избрали урок");
                 }
                 else if (this.dataGridLessons.SelectedItems.Count > 1)
                 {
-                    MessageBox.Show("You must select a single lesson!");
+                    MessageBox.Show("Трябва да изберете точно един урок");
                 }
                 else if(!(this.dataGridLessons.SelectedItem as dynamic).HasHomework)
                 {
-                    MessageBox.Show("This lesson does not have a homework!");
+                    MessageBox.Show("Този урок няма домашно");
                 }
                 else if((this.dataGridLessons.SelectedItem as dynamic).SentHomework)
                 {
-                    MessageBox.Show("You have already sent a homework for this lesson!");
+                    MessageBox.Show("Вече сте изпратили домашно за този урок");
                 }
                 else
                 {
@@ -154,7 +161,7 @@ namespace VirtualClassroom.StudentClient
                         client.AddHomework(homework);
 
                         this.dataGridLessons.ItemsSource = client.GetLessonViewsByStudent(MainWindow.Student.Id);
-                        MessageBox.Show("Homework added successfully!");
+                        MessageBox.Show("Домашното беше изпратено успешно");
                     }
                 }
             }

@@ -32,9 +32,10 @@ namespace VirtualClassroom.StudentClient
 
         private void ValidateInput()
         {
-            if(string.IsNullOrEmpty(this.txtHomeworkPath.Text) || string.IsNullOrEmpty(this.txtHomeworkPath.Text))
+            if(string.IsNullOrEmpty(this.txtHomeworkPath.Text) 
+                || string.IsNullOrEmpty(this.txtHomeworkPath.Text))
             {
-                throw new Exception("You must select content for the homework!");
+                throw new Exception("Трябва да изберете съдържание за домашното");
             }
         }
 
@@ -57,7 +58,7 @@ namespace VirtualClassroom.StudentClient
                 if (window.HtmlContent.Length > 0)
                 {
                     this.HomeworkContent = window.HtmlContent;
-                    this.txtHomeworkPath.Text = "[From Editor]";
+                    this.txtHomeworkPath.Text = "[От редактора]";
                     this.txtHomeworkPath.IsEnabled = false;
                 }
             }
@@ -89,7 +90,7 @@ namespace VirtualClassroom.StudentClient
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message, "Invalid input");
+                MessageBox.Show(ex.Message, "Грешно въведена информация");
             }
         }
 
