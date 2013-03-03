@@ -11,7 +11,6 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="4563" fromTop="35" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml" caret="960" fromTop="2" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="856" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1832" fromTop="11" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="434" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="1186" fromTop="2" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="639" fromTop="2" />
@@ -27,18 +26,10 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="725" fromTop="8" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1450" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="457" fromTop="16" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="533" fromTop="20" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="902" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="454" fromTop="14" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="738" fromTop="22" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="472" fromTop="15" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="723" fromTop="21" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="241" fromTop="3" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="1186" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="972" fromTop="20" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="1811" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="3058" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="293" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="735" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="13" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="693" fromTop="18" />
@@ -59,6 +50,16 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="13" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1450" fromTop="12" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="13" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="735" fromTop="12" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="209" fromTop="9" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="395" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="533" fromTop="20" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="514" fromTop="7" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="539" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1678" fromTop="12" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="2350" fromTop="17" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="2135" fromTop="11" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -76,11 +77,11 @@
       <Item value="static" priority="3" />
       <Item value="public" priority="5" />
       <Item value="StudentServiceClient`0" priority="0" />
-      <Item value="if" priority="11" />
+      <Item value="if" priority="12" />
       <Item value="clientInstance" priority="4" />
       <Item value="new" priority="11" />
       <Item value="StudentServiceClient" priority="0" />
-      <Item value="return" priority="0" />
+      <Item value="return" priority="1" />
       <Item value="ClientManager`0" priority="3" />
       <Item value="Student`0" priority="2" />
       <Item value="client" priority="7" />
@@ -121,7 +122,7 @@
       <Item value="void" priority="1" />
       <Item value="StudentClient" priority="1" />
       <Item value="byte" priority="0" />
-      <Item value="string" priority="4" />
+      <Item value="string" priority="5" />
       <Item value="false" priority="1" />
       <Item value="AddHomeworkWindow`0" priority="0" />
       <Item value="window" priority="4" />
@@ -150,6 +151,11 @@
       <Item value="password" priority="0" />
       <Item value="secret" priority="1" />
       <Item value="Right" priority="0" />
+      <Item value="switch" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="value" priority="0" />
+      <Item value="path" priority="1" />
+      <Item value="True" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.ClientManager">
       <Item value="GetClient`0" priority="1" />

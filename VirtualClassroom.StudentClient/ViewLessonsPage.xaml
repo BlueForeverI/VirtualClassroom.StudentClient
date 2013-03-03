@@ -3,9 +3,11 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      mc:Ignorable="d" 
+      xmlns:StudentClient="clr-namespace:VirtualClassroom.StudentClient" mc:Ignorable="d" 
 	Title="Уроци">
-
+    <Page.Resources>
+        <StudentClient:BoolConverter x:Key="BoolConverter" />
+    </Page.Resources>
     <Grid>
         <GroupBox Header="Уроци"
                   Padding="5 10 10 10" HorizontalAlignment="Center">
@@ -17,8 +19,20 @@
                         <DataGridTextColumn Header="Предмет" Binding="{Binding Path=Subject}" />
                         <DataGridTextColumn Header="Дата" Binding="{Binding Path=Date}" />
                         <DataGridTextColumn Header="Краен срок за домашно" Binding="{Binding Path=HomeworkDeadline}" />
-                        <DataGridTextColumn Header="Има домашно" Binding="{Binding Path=HasHomework}" />
-                        <DataGridTextColumn Header="Изпратено домашно" Binding="{Binding Path=SentHomework}" />
+                        <DataGridTemplateColumn Header="Има домашно" IsReadOnly="True">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding Path=HasHomework, Converter={StaticResource BoolConverter}}" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Изпратено домашно" IsReadOnly="True">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding Path=SentHomework, Converter={StaticResource BoolConverter}}" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
                 <StackPanel>

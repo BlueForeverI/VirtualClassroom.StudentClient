@@ -69,6 +69,7 @@
     <Compile Include="AddHomeworkWindow.xaml.cs">
       <DependentUpon>AddHomeworkWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BoolConverter.cs" />
     <Compile Include="ClientManager.cs" />
     <Compile Include="Crypto.cs" />
     <Compile Include="DocumentEditor.xaml.cs">
@@ -231,6 +232,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="school.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\False.png" />
+    <Resource Include="Images\True.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
