@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         Title="Вход - Ученик" SizeToContent="WidthAndHeight"
-        Background="{DynamicResource WindowBackgroundBrush}" Topmost="True" 
+        Background="{DynamicResource WindowBackgroundBrush}" Topmost="False" 
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <xctk:BusyIndicator x:Name="busyIndicator" IsBusy="False" BusyContent="Моля, изчакайте...">
