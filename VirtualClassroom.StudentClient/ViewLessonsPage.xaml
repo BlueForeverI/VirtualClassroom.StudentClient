@@ -37,6 +37,7 @@
                 </DataGrid>
                 <StackPanel>
                     <Button x:Name="btnDownloadContent" Click="btnDownloadContent_Click">Изтегли съдържанието</Button>
+                    <Button x:Name="btnDownloadSentHomework" Click="btnDownloadSentHomework_Click">Изтегли изпратеното домашо</Button>
                     <Button x:Name="btnDownloadHomework" Click="btnDownloadHomework_Click">Изтегли домашното</Button>
                     <Button x:Name="btnAddHomework" Click="btnAddHomework_Click">Изпрати домашно</Button>
                 </StackPanel>

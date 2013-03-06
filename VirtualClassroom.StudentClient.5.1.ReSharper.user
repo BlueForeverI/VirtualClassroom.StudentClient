@@ -22,24 +22,14 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="440" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml.cs" caret="549" fromTop="5" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="395" fromTop="14" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="725" fromTop="8" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="1450" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="457" fromTop="16" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="533" fromTop="20" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="902" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="725" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="2648" fromTop="10" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="7506" fromTop="17" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="947" fromTop="18" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="693" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="98" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="308" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="281" fromTop="10" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="568" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="924" fromTop="22" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Crypto.cs" caret="7147" fromTop="169" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="13" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="131" fromTop="7" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="13" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="647" fromTop="18" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="6063" fromTop="6" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="8189" fromTop="17" />
@@ -58,7 +48,17 @@
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="1678" fromTop="12" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="2350" fromTop="17" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="2135" fromTop="11" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="746" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="1203" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="2697" fromTop="10" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="6523" fromTop="26" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="8615" fromTop="33" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="7175" fromTop="25" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="3371" fromTop="12" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="1203" fromTop="23" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="8464" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="1203" fromTop="23" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="6976" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="7506" fromTop="17" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="947" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
@@ -77,7 +77,7 @@
       <Item value="static" priority="3" />
       <Item value="public" priority="5" />
       <Item value="StudentServiceClient`0" priority="0" />
-      <Item value="if" priority="12" />
+      <Item value="if" priority="13" />
       <Item value="clientInstance" priority="4" />
       <Item value="new" priority="11" />
       <Item value="StudentServiceClient" priority="0" />
@@ -95,20 +95,20 @@
       <Item value="private" priority="2" />
       <Item value="loginWindow" priority="2" />
       <Item value="LoginWindow" priority="0" />
-      <Item value="MessageBox`0" priority="10" />
+      <Item value="MessageBox`0" priority="12" />
       <Item value="StudentId" priority="0" />
       <Item value="Uri" priority="1" />
       <Item value="UriKind`0" priority="1" />
       <Item value="Homework`0" priority="1" />
-      <Item value="homework" priority="9" />
+      <Item value="homework" priority="12" />
       <Item value="Homework" priority="1" />
       <Item value="OpenFileDialog`0" priority="0" />
       <Item value="openFileDialog" priority="3" />
       <Item value="OpenFileDialog" priority="0" />
       <Item value="File" priority="1" />
-      <Item value="MainWindow`0" priority="8" />
+      <Item value="MainWindow`0" priority="9" />
       <Item value="int" priority="0" />
-      <Item value="dynamic" priority="0" />
+      <Item value="dynamic" priority="1" />
       <Item value="var" priority="3" />
       <Item value="ToList`1" priority="0" />
       <Item value="from" priority="1" />
@@ -137,13 +137,13 @@
       <Item value="IO" priority="0" />
       <Item value="File`0" priority="0" />
       <Item value="UTF8Encoding`0" priority="1" />
-      <Item value="catch" priority="1" />
-      <Item value="Exception`0" priority="1" />
-      <Item value="ex" priority="4" />
+      <Item value="catch" priority="2" />
+      <Item value="Exception`0" priority="2" />
+      <Item value="ex" priority="5" />
       <Item value="throw" priority="0" />
       <Item value="Exception" priority="0" />
       <Item value="try" priority="2" />
-      <Item value="else" priority="2" />
+      <Item value="else" priority="3" />
       <Item value="LessonView`0" priority="1" />
       <Item value="as" priority="0" />
       <Item value="username" priority="0" />
@@ -156,6 +156,7 @@
       <Item value="value" priority="0" />
       <Item value="path" priority="1" />
       <Item value="True" priority="0" />
+      <Item value="lesson" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.ClientManager">
       <Item value="GetClient`0" priority="1" />
@@ -170,6 +171,7 @@
       <Item value="GetMarksByStudent`0" priority="0" />
       <Item value="GetLessonViewsByStudent`0" priority="0" />
       <Item value="Close`0" priority="0" />
+      <Item value="DownloadSentHomework`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
       <Item value="Template" priority="2" />
@@ -183,10 +185,10 @@
       <Item value="ShowDialog`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.MessageBox">
-      <Item value="Show`0" priority="10" />
+      <Item value="Show`0" priority="12" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:VirtualClassroom.StudentClient.StudentServiceReference.Student">
-      <Item value="Id" priority="0" />
+      <Item value="Id" priority="1" />
       <Item value="FirstName" priority="0" />
       <Item value="MiddleName" priority="0" />
       <Item value="LastName" priority="0" />
@@ -223,7 +225,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@VirtualClassroom.StudentClient.MainWindow">
       <Item value="StudentId" priority="5" />
-      <Item value="Student" priority="1" />
+      <Item value="Student" priority="2" />
       <Item value="StylusUpEvent" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
@@ -283,7 +285,7 @@
       <Item value="GetString`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Exception">
-      <Item value="Message" priority="4" />
+      <Item value="Message" priority="5" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="IsNullOrEmpty`0" priority="1" />

@@ -667,6 +667,9 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/DownloadLessonContent", ReplyAction="http://tempuri.org/IStudentService/DownloadLessonContentResponse")]
         VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonContent(int lessonId);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/DownloadSentHomework", ReplyAction="http://tempuri.org/IStudentService/DownloadSentHomeworkResponse")]
+        VirtualClassroom.StudentClient.StudentServiceReference.File DownloadSentHomework(int studentId, int lessonId);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudentService/DownloadLessonHomework", ReplyAction="http://tempuri.org/IStudentService/DownloadLessonHomeworkResponse")]
         VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonHomework(int lessonId);
         
@@ -717,6 +720,10 @@ namespace VirtualClassroom.StudentClient.StudentServiceReference {
         
         public VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonContent(int lessonId) {
             return base.Channel.DownloadLessonContent(lessonId);
+        }
+        
+        public VirtualClassroom.StudentClient.StudentServiceReference.File DownloadSentHomework(int studentId, int lessonId) {
+            return base.Channel.DownloadSentHomework(studentId, lessonId);
         }
         
         public VirtualClassroom.StudentClient.StudentServiceReference.File DownloadLessonHomework(int lessonId) {

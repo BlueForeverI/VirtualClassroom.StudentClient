@@ -89,7 +89,7 @@ namespace VirtualClassroom.StudentClient
                 else
                 {
                     int lessonId = int.Parse((this.dataGridLessons.SelectedItem as dynamic).Id.ToString());
-                    StudentServiceReference.File homework = client.DownloadLessonHomework(lessonId);
+                    File homework = client.DownloadLessonHomework(lessonId);
 
                     SaveFileDialog saveFileDialog = new SaveFileDialog();
                     saveFileDialog.FileName = homework.Filename;
@@ -155,6 +155,60 @@ namespace VirtualClassroom.StudentClient
                 }
             }
             catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDownloadSentHomework_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (this.dataGridLessons.SelectedIndex < 0)
+                {
+                    MessageBox.Show("Не сте избрали урок");
+                }
+                else if (this.dataGridLessons.SelectedItems.Count > 1)
+                {
+                    MessageBox.Show("Трябва да изберете точно един урок");
+                }
+                else
+                {
+                    dynamic lesson = this.dataGridLessons.SelectedItem;
+
+                    if (!lesson.HasHomework)
+                    {
+                        MessageBox.Show("Този урок няма домашно");
+                    }
+                    else if(!lesson.SentHomework)
+                    {
+                        MessageBox.Show("Не сте изпратили домашно за този урок");
+                    }
+                    else
+                    {
+                        File homework = client.DownloadSentHomework(MainWindow.Student.Id, lesson.Id);
+
+                        SaveFileDialog saveFileDialog = new SaveFileDialog();
+                        saveFileDialog.FileName = homework.Filename;
+                        if (saveFileDialog.ShowDialog() == true)
+                        {
+                            if (homework.Filename.EndsWith(".html"))
+                            {
+                                System.IO.File.WriteAllText(saveFileDialog.FileName,
+                                                            Encoding.UTF8.GetString(homework.Content),
+                                                            Encoding.UTF8);
+                            }
+                            else
+                            {
+                                System.IO.File.WriteAllBytes(saveFileDialog.FileName, homework.Content);
+                            }
+
+                            MessageBox.Show("Домашното беше изтеглено успешно");
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

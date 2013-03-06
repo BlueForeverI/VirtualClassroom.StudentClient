@@ -159,17 +159,17 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Service References\StudentServiceReference\StudentService.wsdl" />
-    <None Include="Service References\StudentServiceReference\StudentService.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService1.wsdl" />
+    <None Include="Service References\StudentServiceReference\StudentService4.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StudentServiceReference\StudentService1.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService41.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StudentServiceReference\StudentService2.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService42.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StudentServiceReference\StudentService3.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService43.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.File.datasource">
@@ -193,9 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\StudentServiceReference\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\StudentServiceReference\StudentService.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\StudentServiceReference\configuration91.svcinfo" />
@@ -236,6 +233,9 @@
   <ItemGroup>
     <Resource Include="Images\False.png" />
     <Resource Include="Images\True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StudentServiceReference\StudentService1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

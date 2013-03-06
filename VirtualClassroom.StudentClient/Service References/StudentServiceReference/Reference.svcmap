@@ -18,15 +18,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://virtualclassroomservices.apphb.com/Services/StudentService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:53611/Services/StudentService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="StudentService.wsdl" MetadataType="Wsdl" ID="dbc6dc33-d31b-4b9f-9e3d-821aec95f401" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?wsdl" />
-    <MetadataFile FileName="StudentService.disco" MetadataType="Disco" ID="94718c21-53d4-4422-93ce-00ac76a14e87" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?disco" />
-    <MetadataFile FileName="StudentService.xsd" MetadataType="Schema" ID="f0551240-0359-4034-a6e9-f78c2170c6e5" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" />
-    <MetadataFile FileName="StudentService3.xsd" MetadataType="Schema" ID="cef0ef07-263d-4447-ab90-a7875de583fe" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd3" />
-    <MetadataFile FileName="StudentService1.xsd" MetadataType="Schema" ID="d833d8ec-2e6e-4827-ad56-d74e64671749" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd0" />
-    <MetadataFile FileName="StudentService2.xsd" MetadataType="Schema" ID="4f2d4f48-24fe-4a27-b130-b0d52b5266a0" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StudentService4.xsd" MetadataType="Schema" ID="344d523e-81f9-4302-82d8-f8ed3a03a988" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="StudentService41.xsd" MetadataType="Schema" ID="39ee12d1-0d66-4a50-939f-075fbc730b1b" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="StudentService1.wsdl" MetadataType="Wsdl" ID="d2b18541-0c94-4633-b670-a35350ae0082" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?wsdl" />
+    <MetadataFile FileName="StudentService42.xsd" MetadataType="Schema" ID="de3c9331-3639-40b8-b979-5483df995fd2" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="StudentService1.disco" MetadataType="Disco" ID="8a8344f7-b96d-41b2-945a-1c29362a576e" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?disco" />
+    <MetadataFile FileName="StudentService43.xsd" MetadataType="Schema" ID="c6f81df9-349b-4317-afee-8feccd35e37c" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
