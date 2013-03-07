@@ -19,14 +19,14 @@
                         <DataGridTextColumn Header="Предмет" Binding="{Binding Path=Subject}" />
                         <DataGridTextColumn Header="Дата" Binding="{Binding Path=Date}" />
                         <DataGridTextColumn Header="Краен срок за домашно" Binding="{Binding Path=HomeworkDeadline}" />
-                        <DataGridTemplateColumn Header="Има домашно" IsReadOnly="True">
+                        <DataGridTemplateColumn Header="Има домашно" IsReadOnly="True" SortMemberPath="HasHomework">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Image Source="{Binding Path=HasHomework, Converter={StaticResource BoolConverter}}" />
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
-                        <DataGridTemplateColumn Header="Изпратено домашно" IsReadOnly="True">
+                        <DataGridTemplateColumn Header="Изпратено домашно" IsReadOnly="True" SortMemberPath="SentHomework">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Image Source="{Binding Path=SentHomework, Converter={StaticResource BoolConverter}}" />
