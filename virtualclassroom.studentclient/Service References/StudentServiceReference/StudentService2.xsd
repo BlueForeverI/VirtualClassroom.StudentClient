@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" />
+  <xs:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Views" />
+  <xs:element name="LoginStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usernameCrypt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordCrypt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="secret" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="LoginStudentResult" nillable="true" type="q1:Student" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLessonViewsByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLessonViewsByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Views" minOccurs="0" name="GetLessonViewsByStudentResult" nillable="true" type="q2:ArrayOfLessonView" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="DownloadLessonContentResult" nillable="true" type="q3:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadSentHomework">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+        <xs:element minOccurs="0" name="lessonId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadSentHomeworkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="DownloadSentHomeworkResult" nillable="true" type="q4:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonHomework">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadLessonHomeworkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="DownloadLessonHomeworkResult" nillable="true" type="q5:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddHomework">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="homework" nillable="true" type="q6:Homework" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddHomeworkResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHomeworksByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHomeworksByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="GetHomeworksByStudentResult" nillable="true" type="q7:ArrayOfHomework" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMarksByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMarksByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="GetMarksByStudentResult" nillable="true" type="q8:ArrayOfMark" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EvaluateTest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="test" nillable="true" type="q9:Test" />
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EvaluateTestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EvaluateTestResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTestViewsByStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTestViewsByStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Views" minOccurs="0" name="GetTestViewsByStudentResult" nillable="true" type="q10:ArrayOfTestView" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="testId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" minOccurs="0" name="GetTestResult" nillable="true" type="q11:Test" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

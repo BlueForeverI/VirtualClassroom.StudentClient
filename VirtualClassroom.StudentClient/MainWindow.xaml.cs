@@ -56,5 +56,17 @@ namespace VirtualClassroom.StudentClient
         {
             ClientManager.CloseClient();
         }
+
+        private void btnTests_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.frameMainContent.Source = new Uri("ViewTests.xaml", UriKind.Relative);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -92,6 +92,12 @@
     <Compile Include="ViewMarksPage.xaml.cs">
       <DependentUpon>ViewMarksPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewTestWindow.xaml.cs">
+      <DependentUpon>ViewTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTests.xaml.cs">
+      <DependentUpon>ViewTests.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddHomeworkWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +138,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -159,17 +173,17 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Service References\StudentServiceReference\StudentService1.wsdl" />
-    <None Include="Service References\StudentServiceReference\StudentService4.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService.wsdl" />
+    <None Include="Service References\StudentServiceReference\StudentService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StudentServiceReference\StudentService41.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StudentServiceReference\StudentService42.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\StudentServiceReference\StudentService43.xsd">
+    <None Include="Service References\StudentServiceReference\StudentService3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.File.datasource">
@@ -185,6 +199,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Student.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.Test.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceReference\VirtualClassroom.StudentClient.StudentServiceReference.TestView.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -235,7 +255,7 @@
     <Resource Include="Images\True.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\StudentServiceReference\StudentService1.disco" />
+    <None Include="Service References\StudentServiceReference\StudentService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

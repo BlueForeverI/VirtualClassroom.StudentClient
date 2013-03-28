@@ -18,15 +18,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:53611/Services/StudentService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://virtualclassroomservices.apphb.com/Services/StudentService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="StudentService4.xsd" MetadataType="Schema" ID="344d523e-81f9-4302-82d8-f8ed3a03a988" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd2" />
-    <MetadataFile FileName="StudentService41.xsd" MetadataType="Schema" ID="39ee12d1-0d66-4a50-939f-075fbc730b1b" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd3" />
-    <MetadataFile FileName="StudentService1.wsdl" MetadataType="Wsdl" ID="d2b18541-0c94-4633-b670-a35350ae0082" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?wsdl" />
-    <MetadataFile FileName="StudentService42.xsd" MetadataType="Schema" ID="de3c9331-3639-40b8-b979-5483df995fd2" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd0" />
-    <MetadataFile FileName="StudentService1.disco" MetadataType="Disco" ID="8a8344f7-b96d-41b2-945a-1c29362a576e" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?disco" />
-    <MetadataFile FileName="StudentService43.xsd" MetadataType="Schema" ID="c6f81df9-349b-4317-afee-8feccd35e37c" SourceId="1" SourceUrl="http://localhost:53611/Services/StudentService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StudentService.wsdl" MetadataType="Wsdl" ID="ffc826a3-7ecc-494f-8d8e-309aa2d37b03" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?wsdl" />
+    <MetadataFile FileName="StudentService.disco" MetadataType="Disco" ID="74e35980-12e7-4a96-b9fa-9116d3494cb0" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?disco" />
+    <MetadataFile FileName="StudentService.xsd" MetadataType="Schema" ID="df9e2f12-3ab9-4851-887b-39a511d948f5" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="StudentService1.xsd" MetadataType="Schema" ID="bc3053d7-faaf-427f-b6b9-0c6a49a8752e" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="StudentService2.xsd" MetadataType="Schema" ID="e4d43a21-22ab-4503-b8f9-14c43f435f2f" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="StudentService3.xsd" MetadataType="Schema" ID="c3d625c7-475b-4d23-ba3a-7dab51c05de4" SourceId="1" SourceUrl="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

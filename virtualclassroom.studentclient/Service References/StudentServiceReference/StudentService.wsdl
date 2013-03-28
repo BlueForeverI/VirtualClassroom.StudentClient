@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="StudentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IStudentService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Models" />
+      <xsd:import schemaLocation="http://virtualclassroomservices.apphb.com/Services/StudentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/VirtualClassroom.Services.Views" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStudentService_LoginStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_LoginStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetLessonViewsByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonViewsByStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetLessonViewsByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonViewsByStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonContent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadSentHomework_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadSentHomework" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadSentHomework_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadSentHomeworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonHomework_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonHomework" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DownloadLessonHomework_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadLessonHomeworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_AddHomework_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddHomework" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_AddHomework_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddHomeworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetHomeworksByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHomeworksByStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetHomeworksByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHomeworksByStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetMarksByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarksByStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetMarksByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarksByStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_EvaluateTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:EvaluateTest" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_EvaluateTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EvaluateTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetTestViewsByStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestViewsByStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetTestViewsByStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestViewsByStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTest" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IStudentService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="LoginStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/LoginStudent" message="tns:IStudentService_LoginStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/LoginStudentResponse" message="tns:IStudentService_LoginStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetLessonViewsByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetLessonViewsByStudent" message="tns:IStudentService_GetLessonViewsByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetLessonViewsByStudentResponse" message="tns:IStudentService_GetLessonViewsByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DownloadLessonContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonContent" message="tns:IStudentService_DownloadLessonContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonContentResponse" message="tns:IStudentService_DownloadLessonContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DownloadSentHomework">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DownloadSentHomework" message="tns:IStudentService_DownloadSentHomework_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/DownloadSentHomeworkResponse" message="tns:IStudentService_DownloadSentHomework_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DownloadLessonHomework">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonHomework" message="tns:IStudentService_DownloadLessonHomework_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/DownloadLessonHomeworkResponse" message="tns:IStudentService_DownloadLessonHomework_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddHomework">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/AddHomework" message="tns:IStudentService_AddHomework_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/AddHomeworkResponse" message="tns:IStudentService_AddHomework_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetHomeworksByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetHomeworksByStudent" message="tns:IStudentService_GetHomeworksByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetHomeworksByStudentResponse" message="tns:IStudentService_GetHomeworksByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetMarksByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetMarksByStudent" message="tns:IStudentService_GetMarksByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetMarksByStudentResponse" message="tns:IStudentService_GetMarksByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EvaluateTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/EvaluateTest" message="tns:IStudentService_EvaluateTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/EvaluateTestResponse" message="tns:IStudentService_EvaluateTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetTestViewsByStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetTestViewsByStudent" message="tns:IStudentService_GetTestViewsByStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetTestViewsByStudentResponse" message="tns:IStudentService_GetTestViewsByStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetTest" message="tns:IStudentService_GetTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetTestResponse" message="tns:IStudentService_GetTest_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IStudentService" type="tns:IStudentService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IStudentService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/LoginStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLessonViewsByStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetLessonViewsByStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadLessonContent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/DownloadLessonContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadSentHomework">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/DownloadSentHomework" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadLessonHomework">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/DownloadLessonHomework" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHomework">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/AddHomework" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHomeworksByStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetHomeworksByStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMarksByStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetMarksByStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EvaluateTest">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/EvaluateTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestViewsByStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetTestViewsByStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTest">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StudentService">
+    <wsdl:port name="WSHttpBinding_IStudentService" binding="tns:WSHttpBinding_IStudentService">
+      <soap12:address location="http://virtualclassroomservices.apphb.com/Services/StudentService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://virtualclassroomservices.apphb.com/Services/StudentService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
