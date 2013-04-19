@@ -59,5 +59,21 @@ namespace VirtualClassroom.StudentClient
             this.DialogResult = false;
             this.Close();
         }
+
+        private void btnPrevious_Click(object sender, RoutedEventArgs e)
+        {
+            if(this.listBoxQuestions.SelectedIndex > 0)
+            {
+                this.listBoxQuestions.SelectedIndex--;
+            }
+        }
+
+        private void btnNext_Click(object sender, RoutedEventArgs e)
+        {
+            if(this.listBoxQuestions.SelectedIndex < this.listBoxQuestions.Items.Count - 1)
+            {
+                this.listBoxQuestions.SelectedIndex++;
+            }
+        }
     }
 }
