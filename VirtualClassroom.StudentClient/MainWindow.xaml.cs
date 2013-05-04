@@ -32,7 +32,7 @@ namespace VirtualClassroom.StudentClient
         {
             try
             {
-                this.frameMainContent.Source = new Uri("ViewLessonsPage.xaml", UriKind.Relative);
+                this.frameMainContent.Source = new Uri("Pages/ViewLessonsPage.xaml", UriKind.Relative);
             }
             catch(Exception ex)
             {
@@ -44,7 +44,7 @@ namespace VirtualClassroom.StudentClient
         {
             try
             {
-                this.frameMainContent.Source = new Uri("ViewMarksPage.xaml", UriKind.Relative);
+                this.frameMainContent.Source = new Uri("Pages/ViewMarksPage.xaml", UriKind.Relative);
             }
             catch (Exception ex)
             {
@@ -61,7 +61,7 @@ namespace VirtualClassroom.StudentClient
         {
             try
             {
-                this.frameMainContent.Source = new Uri("ViewTests.xaml", UriKind.Relative);
+                this.frameMainContent.Source = new Uri("Pages/ViewTests.xaml", UriKind.Relative);
             }
             catch (Exception ex)
             {

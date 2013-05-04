@@ -9,61 +9,61 @@
   <RecentFiles>
     <RecentFiles>
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Theme.xaml" caret="4563" fromTop="35" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml" caret="434" fromTop="6" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml" caret="639" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml" caret="708" fromTop="11" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml.cs" caret="534" fromTop="17" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ClientManager.cs" caret="924" fromTop="22" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:Crypto.cs" caret="135" fromTop="6" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml.cs" caret="440" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:EditorWindow.xaml.cs" caret="549" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:LoginWindow.xaml.cs" caret="395" fromTop="14" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewMarksPage.xaml.cs" caret="457" fromTop="16" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:BoolConverter.cs" caret="533" fromTop="20" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewMarksPage.xaml" caret="434" fromTop="6" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:EditorWindow.xaml" caret="639" fromTop="2" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:LoginWindow.xaml" caret="708" fromTop="11" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:AddHomeworkWindow.xaml.cs" caret="534" fromTop="17" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Utils/f:ClientManager.cs" caret="924" fromTop="22" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Utils/f:Crypto.cs" caret="135" fromTop="6" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:DocumentEditor.xaml.cs" caret="440" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:EditorWindow.xaml.cs" caret="549" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:LoginWindow.xaml.cs" caret="395" fromTop="14" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewMarksPage.xaml.cs" caret="457" fromTop="16" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:App.xaml" caret="0" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:AddHomeworkWindow.xaml" caret="331" fromTop="4" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:DocumentEditor.xaml" caret="269" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:AddHomeworkWindow.xaml" caret="331" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:DocumentEditor.xaml" caret="269" fromTop="3" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml" caret="921" fromTop="9" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1852" fromTop="28" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml" caret="843" fromTop="3" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml" caret="756" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml" caret="843" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewLessonsPage.xaml" caret="756" fromTop="0" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="1203" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewLessonsPage.xaml.cs" caret="369" fromTop="0" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="1763" fromTop="53" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="2336" fromTop="27" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="470" fromTop="7" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewLessonsPage.xaml.cs" caret="369" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="1763" fromTop="53" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="2336" fromTop="27" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="470" fromTop="7" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1637" fromTop="0" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Utils/f:BoolConverter.cs" caret="235" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="2012" fromTop="33" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1861" fromTop="28" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml" caret="1542" fromTop="8" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml" caret="1433" fromTop="8" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml" caret="364" fromTop="2" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="1023" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="1008" fromTop="22" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="1023" fromTop="23" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="1008" fromTop="22" />
       <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:app.config" caret="1203" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="913" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="2324" fromTop="31" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="227" fromTop="3" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="1189" fromTop="4" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="1991" fromTop="4" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="1550" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="752" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="1837" fromTop="23" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="1193" fromTop="24" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="1178" fromTop="16" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="1674" fromTop="26" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="594" fromTop="20" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="564" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="995" fromTop="18" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="951" fromTop="8" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="1354" fromTop="16" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTests.xaml.cs" caret="2170" fromTop="27" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="2736" fromTop="8" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="2063" fromTop="19" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml.cs" caret="2336" fromTop="27" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="382" fromTop="5" />
-      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:ViewTestWindow.xaml" caret="2437" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="913" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="2324" fromTop="31" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="227" fromTop="3" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="1189" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="1991" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="1550" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="752" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="1837" fromTop="23" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="1193" fromTop="24" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="1178" fromTop="16" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="1674" fromTop="26" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="594" fromTop="20" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="564" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="995" fromTop="18" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="951" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="1354" fromTop="16" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Pages/f:ViewTests.xaml.cs" caret="2170" fromTop="27" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="2736" fromTop="8" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="2063" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml.cs" caret="2336" fromTop="27" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="382" fromTop="5" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Windows/f:ViewTestWindow.xaml" caret="2437" fromTop="4" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="996" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1356" fromTop="19" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/f:MainWindow.xaml.cs" caret="1870" fromTop="24" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Utils/f:BoolConverter.cs" caret="394" fromTop="13" />
+      <File id="133C5E21-6D13-4156-B197-2BCCE21FFED6/d:Utils/f:BoolConverter.cs" caret="495" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

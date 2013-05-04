@@ -66,19 +66,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddHomeworkWindow.xaml.cs">
+    <Compile Include="Windows\AddHomeworkWindow.xaml.cs">
       <DependentUpon>AddHomeworkWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BoolConverter.cs" />
-    <Compile Include="ClientManager.cs" />
-    <Compile Include="Crypto.cs" />
-    <Compile Include="DocumentEditor.xaml.cs">
+    <Compile Include="Utils\BoolConverter.cs" />
+    <Compile Include="Utils\ClientManager.cs" />
+    <Compile Include="Utils\Crypto.cs" />
+    <Compile Include="Windows\DocumentEditor.xaml.cs">
       <DependentUpon>DocumentEditor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditorWindow.xaml.cs">
+    <Compile Include="Windows\EditorWindow.xaml.cs">
       <DependentUpon>EditorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginWindow.xaml.cs">
+    <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Service References\StudentServiceReference\Reference.cs">
@@ -86,31 +86,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="ViewLessonsPage.xaml.cs">
+    <Compile Include="Pages\ViewLessonsPage.xaml.cs">
       <DependentUpon>ViewLessonsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewMarksPage.xaml.cs">
+    <Compile Include="Pages\ViewMarksPage.xaml.cs">
       <DependentUpon>ViewMarksPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewTestWindow.xaml.cs">
+    <Compile Include="Windows\ViewTestWindow.xaml.cs">
       <DependentUpon>ViewTestWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewTests.xaml.cs">
+    <Compile Include="Pages\ViewTests.xaml.cs">
       <DependentUpon>ViewTests.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddHomeworkWindow.xaml">
+    <Page Include="Windows\AddHomeworkWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DocumentEditor.xaml">
+    <Page Include="Windows\DocumentEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="EditorWindow.xaml">
+    <Page Include="Windows\EditorWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="LoginWindow.xaml">
+    <Page Include="Windows\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,19 +130,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ViewLessonsPage.xaml">
+    <Page Include="Pages\ViewLessonsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewMarksPage.xaml">
+    <Page Include="Pages\ViewMarksPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewTestWindow.xaml">
+    <Page Include="Windows\ViewTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewTests.xaml">
+    <Page Include="Pages\ViewTests.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -227,32 +227,32 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Bold.png" />
-    <Resource Include="Images\Bullets.png" />
-    <Resource Include="Images\CenterAlign.png" />
-    <Resource Include="Images\Copy.png" />
-    <Resource Include="Images\Cut.png" />
-    <Resource Include="Images\Delete.png" />
-    <Resource Include="Images\Indent.png" />
-    <Resource Include="Images\IndentRemove.png" />
-    <Resource Include="Images\Italic.png" />
-    <Resource Include="Images\JustifyAlign.png" />
-    <Resource Include="Images\LeftAlign.png" />
-    <Resource Include="Images\Numbering.png" />
-    <Resource Include="Images\Paste.png" />
-    <Resource Include="Images\Redo.png" />
-    <Resource Include="Images\RightAlign.png" />
-    <Resource Include="Images\Subscript.png" />
-    <Resource Include="Images\Superscript.png" />
-    <Resource Include="Images\Underline.png" />
-    <Resource Include="Images\Undo.png" />
+    <Resource Include="Windows\Images\Bold.png" />
+    <Resource Include="Windows\Images\Bullets.png" />
+    <Resource Include="Windows\Images\CenterAlign.png" />
+    <Resource Include="Windows\Images\Copy.png" />
+    <Resource Include="Windows\Images\Cut.png" />
+    <Resource Include="Windows\Images\Delete.png" />
+    <Resource Include="Windows\Images\Indent.png" />
+    <Resource Include="Windows\Images\IndentRemove.png" />
+    <Resource Include="Windows\Images\Italic.png" />
+    <Resource Include="Windows\Images\JustifyAlign.png" />
+    <Resource Include="Windows\Images\LeftAlign.png" />
+    <Resource Include="Windows\Images\Numbering.png" />
+    <Resource Include="Windows\Images\Paste.png" />
+    <Resource Include="Windows\Images\Redo.png" />
+    <Resource Include="Windows\Images\RightAlign.png" />
+    <Resource Include="Windows\Images\Subscript.png" />
+    <Resource Include="Windows\Images\Superscript.png" />
+    <Resource Include="Windows\Images\Underline.png" />
+    <Resource Include="Windows\Images\Undo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="school.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\False.png" />
-    <Resource Include="Images\True.png" />
+    <Resource Include="Windows\Images\False.png" />
+    <Resource Include="Windows\Images\True.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\StudentServiceReference\StudentService.disco" />
