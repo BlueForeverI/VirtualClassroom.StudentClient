@@ -84,7 +84,9 @@
   </xs:element>
   <xs:element name="AddHomeworkResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddHomeworkResult" type="xs:boolean" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetHomeworksByStudent">
