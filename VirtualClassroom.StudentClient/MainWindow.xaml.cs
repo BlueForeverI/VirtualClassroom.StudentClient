@@ -36,7 +36,8 @@ namespace VirtualClassroom.StudentClient
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(Application.Current.Resources["defaultErrorMessage"].ToString(), 
+                    "Грешка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -48,7 +49,8 @@ namespace VirtualClassroom.StudentClient
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(Application.Current.Resources["defaultErrorMessage"].ToString(), 
+                    "Грешка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -65,7 +67,8 @@ namespace VirtualClassroom.StudentClient
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(Application.Current.Resources["defaultErrorMessage"].ToString(), 
+                    "Грешка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
