@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using VirtualClassroom.StudentClient.StudentServiceReference;
@@ -17,7 +18,13 @@ namespace VirtualClassroom.StudentClient
             try
             {
                 InitializeComponent();
-                this.dataGridMarks.ItemsSource = client.GetMarksByStudent(MainWindow.Student.Id); ;
+                Thread thread = new Thread(() => Dispatcher.BeginInvoke(
+                new Action(() =>
+                {
+                    var marks = client.GetMarksByStudent(MainWindow.Student.Id);
+                    this.dataGridMarks.ItemsSource = marks;
+                })));
+                thread.Start();
             }
             catch (Exception ex)
             {

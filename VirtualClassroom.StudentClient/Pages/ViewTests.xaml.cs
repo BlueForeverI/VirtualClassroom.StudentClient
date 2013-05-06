@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -22,12 +23,23 @@ namespace VirtualClassroom.StudentClient
     {
         private StudentServiceClient client = ClientManager.GetClient();
 
+        private void UpdateTestViews()
+        {
+            Thread thread = new Thread(() => Dispatcher.BeginInvoke(
+                new Action(() =>
+                {
+                    var tests = client.GetTestViewsByStudent(MainWindow.Student.Id);
+                    this.dataGridTests.ItemsSource = tests;
+                })));
+            thread.Start();
+        }
+
         public ViewTests()
         {
             try
             {
                 InitializeComponent();
-                this.dataGridTests.ItemsSource = client.GetTestViewsByStudent(MainWindow.Student.Id);
+                UpdateTestViews();
             }
             catch (Exception ex)
             {
@@ -58,12 +70,9 @@ namespace VirtualClassroom.StudentClient
                     if(viewTestWindow.ShowDialog() == true)
                     {
                         int result = client.EvaluateTest(viewTestWindow.Test, MainWindow.Student.Id);
-
+                        UpdateTestViews();
                         MessageBox.Show(string.Format("Вие изкарахте {0} точки", result));
-                        this.dataGridTests.ItemsSource = 
-                            client.GetTestViewsByStudent(MainWindow.Student.Id);
                     }
-
                 }
             }
             catch (Exception ex)

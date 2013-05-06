@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Win32;
@@ -14,14 +15,23 @@ namespace VirtualClassroom.StudentClient
     {
         private StudentServiceClient client = ClientManager.GetClient();
 
+        private void UpdateLessonViews()
+        {
+            Thread thread = new Thread(() => Dispatcher.BeginInvoke(
+                new Action(() =>
+                {
+                    var lessons = client.GetLessonViewsByStudent(MainWindow.Student.Id);
+                    this.dataGridLessons.ItemsSource = lessons;
+                })));
+            thread.Start();
+        }
+
         public ViewLessonsPage()
         {
             try
             {
                 InitializeComponent();
-
-                this.dataGridLessons.ItemsSource = 
-                    client.GetLessonViewsByStudent(MainWindow.Student.Id);
+                UpdateLessonViews();
             }
             catch (Exception ex)
             {
